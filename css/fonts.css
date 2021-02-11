@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Rochester';
+  src: url("../fonts/rochester.ttf");
+  /* IE 9 Compatibility Mode */
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Sansation Light';
+  src: url("../fonts/sansation_light.eot");
+  /* IE 9 Compatibility Mode */
+  src: url("../fonts/sansation_light.eot?#iefix") format("embedded-opentype"), url("../fonts/sansation_light.ttf") format("truetype"), url("../fonts/sansation_light.svg#sansation_light") format("svg");
+  /* Chrome < 4, Legacy iOS */ }

@@ -1,0 +1,120 @@
+
+    $delay: .5s;
+    $transition: .5s;
+    $whitecolor: white;
+    $blackcolor: black;
+    
+
+    .burger{
+        width: 50px;
+        height: 20px;
+        position: fixed;
+        top: 4vh;
+        left: 3%;
+        // background-color: red;
+  
+        // width: 40px;
+        // height: 25px;
+        // border: 1px solid black;
+        // position: relative;
+        z-index: 20;
+        transition: all 0.8s ease;
+
+        // margin-right: 20px;
+        div{
+            z-index: 20;
+        }
+        div:nth-child(1) {
+            position: absolute;
+            top: 5px;
+            width: 100%;
+            height: 2px;
+            background-color: $whitecolor;
+            transition: all  $transition ease;
+            border-radius: 10px;
+            transition-delay:    $delay;
+        }
+
+        div:nth-child(2) {
+            position: absolute;
+            top: 15px;
+            width: 100%;
+            height: 2px;
+            background-color: $whitecolor;
+            transition: all  $transition ease;
+            border-radius: 10px;
+            transition-delay:    $delay;
+        }
+    }
+    .burger-active {
+        div:nth-child(1) {
+            top: 10px;
+            transform: rotate(45deg);
+            background-color: $blackcolor;
+            transition-delay:    $delay;
+        }
+
+        div:nth-child(2) {
+            top: 10px;
+            transform: rotate(-45deg);
+            background-color: $blackcolor;
+            transition-delay:    $delay;
+        }
+    }
+    .burger-black {
+        div:nth-child(1) {
+            // top: 10px;
+            // transform: rotate(45deg);
+            background-color: $blackcolor;
+            // transition-delay:    0;
+        }
+
+        div:nth-child(2) {
+            // top: 10px;
+            // transform: rotate(-45deg);
+            background-color: $blackcolor;
+            // transition-delay:    0;
+        }
+    }
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 7;
+    background-color: #fff;
+    transform: translate(100vw);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .label {
+        font-size: 30vh;
+        width: 60%;
+        text-align: center;
+        display: none;
+        // font-weight: 900;
+    }
+
+    ul {
+        width: 80%;
+
+        li {
+            list-style-type: none;
+
+            a {
+                //   background-color: pink;
+                text-decoration: none;
+                font-size: 0.5rem;
+                line-height: 1rem;
+                text-transform: uppercase;
+                color: black;
+
+
+            }
+
+            // font-weight: 900;
+        }
+    }
+}
