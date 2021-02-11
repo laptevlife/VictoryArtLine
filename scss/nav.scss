@@ -82,10 +82,10 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     z-index: 7;
-    // background-color: #fff;
-    background-color: pink;
+    background-color: #fff;
+    // background-color: pink;
     transform: translate(100vw);
     display: flex;
     justify-content: space-evenly;
@@ -108,8 +108,8 @@
             a {
                 //   background-color: pink;
                 text-decoration: none;
-                font-size: 0.5rem;
-                line-height: 1rem;
+                // font-size: 1.5rem;
+                // line-height: 0.4rem !important;
                 text-transform: uppercase;
                 color: black;
 

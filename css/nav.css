@@ -51,9 +51,9 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   z-index: 7;
-  background-color: pink;
+  background-color: #fff;
   transform: translate(100vw);
   display: flex;
   justify-content: space-evenly;
@@ -69,7 +69,5 @@
       list-style-type: none; }
       .menu ul li a {
         text-decoration: none;
-        font-size: 0.5rem;
-        line-height: 1rem;
         text-transform: uppercase;
         color: black; }
