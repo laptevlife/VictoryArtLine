@@ -15,9 +15,10 @@
 .section-main {
   width: 100%;
   min-height: 100vh !important;
+  min-height: -webkit-fill-available;
   position: relative;
   padding-top: 10vh;
-  border: 1px solid green;
+  border: 1px solid black;
   background-image: url("../images/img (14).png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -54,9 +55,10 @@
 .section-watercolor {
   width: 100%;
   min-height: 100vh !important;
+  min-height: -webkit-fill-available;
   position: relative;
   padding-top: 10vh;
-  border: 1px solid green; }
+  border: 1px solid black; }
   .section-watercolor .bg {
     position: absolute;
     top: 0;
@@ -68,9 +70,10 @@
 .section-inc {
   width: 100%;
   min-height: 100vh !important;
+  min-height: -webkit-fill-available;
   position: relative;
   padding-top: 10vh;
-  border: 1px solid green; }
+  border: 1px solid black; }
   .section-inc .bg1 {
     position: absolute;
     width: 30%;
@@ -86,9 +89,10 @@
 .section-pencil {
   width: 100%;
   min-height: 100vh !important;
+  min-height: -webkit-fill-available;
   position: relative;
   padding-top: 10vh;
-  border: 1px solid green; }
+  border: 1px solid black; }
   .section-pencil .bg1 {
     position: absolute;
     top: 25%;
@@ -101,9 +105,10 @@
 .section-sepia {
   width: 100%;
   min-height: 100vh !important;
+  min-height: -webkit-fill-available;
   position: relative;
   padding-top: 10vh;
-  border: 1px solid green; }
+  border: 1px solid black; }
   .section-sepia .bg1 {
     position: absolute;
     width: 100%;
@@ -116,9 +121,10 @@
 .section-price {
   width: 100%;
   min-height: 100vh !important;
+  min-height: -webkit-fill-available;
   position: relative;
   padding-top: 10vh;
-  border: 1px solid green; }
+  border: 1px solid black; }
   .section-price .bg1 {
     position: absolute;
     width: 100%;
@@ -203,7 +209,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   z-index: 7;
   background-color: pink;
   transform: translate(100vw);

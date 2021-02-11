@@ -4,11 +4,12 @@ $blackcolor: black;
 @mixin section {
     width: 100%;
     min-height: 100vh !important;
+    min-height: -webkit-fill-available;
 
     // height: auto;
     position: relative;
     padding-top: 10vh;
-    border: 1px solid green;
+    border: 1px solid black;
 }
 
 .section-main {
