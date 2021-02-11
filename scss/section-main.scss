@@ -3,11 +3,12 @@ $blackcolor: black;
 
 @mixin section {
     width: 100%;
-    min-height: 100vh;
+    min-height: 100vh !important;
+
     // height: auto;
     position: relative;
     padding-top: 10vh;
-    border: 1px solid blue;
+    border: 1px solid green;
 }
 
 .section-main {

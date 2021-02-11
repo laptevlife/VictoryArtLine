@@ -7,6 +7,7 @@
   margin: 0;
   font-family: 'Sansation Light', arial;
   font-size: 36px;
+  // min-height: -webkit-fill-available;
   // text-shadow: 4px 4px 4px #aaa;
 }
 
@@ -46,6 +47,7 @@ li {
 .container {
   width: 100%;
   min-height: 100vh;
+
   // height: auto;
   //   background-color: red;
 }

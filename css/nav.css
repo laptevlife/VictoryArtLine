@@ -51,9 +51,9 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   z-index: 7;
-  background-color: #fff;
+  background-color: pink;
   transform: translate(100vw);
   display: flex;
   justify-content: space-evenly;
