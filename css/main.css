@@ -232,6 +232,11 @@
   font-family: 'Sansation Light', arial;
   font-size: 36px; }
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
 h1,
 h2,
 h3,
