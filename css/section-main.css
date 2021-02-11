@@ -3,7 +3,7 @@
   min-height: 100vh;
   position: relative;
   padding-top: 10vh;
-  border: 1px solid red;
+  border: 1px solid green;
   background-image: url("../images/img (14).png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,7 +42,7 @@
   min-height: 100vh;
   position: relative;
   padding-top: 10vh;
-  border: 1px solid red; }
+  border: 1px solid green; }
   .section-watercolor .bg {
     position: absolute;
     top: 0;
@@ -56,7 +56,7 @@
   min-height: 100vh;
   position: relative;
   padding-top: 10vh;
-  border: 1px solid red; }
+  border: 1px solid green; }
   .section-inc .bg1 {
     position: absolute;
     width: 30%;
@@ -74,7 +74,7 @@
   min-height: 100vh;
   position: relative;
   padding-top: 10vh;
-  border: 1px solid red; }
+  border: 1px solid green; }
   .section-pencil .bg1 {
     position: absolute;
     top: 25%;
@@ -89,7 +89,7 @@
   min-height: 100vh;
   position: relative;
   padding-top: 10vh;
-  border: 1px solid red; }
+  border: 1px solid green; }
   .section-sepia .bg1 {
     position: absolute;
     width: 100%;
@@ -104,7 +104,7 @@
   min-height: 100vh;
   position: relative;
   padding-top: 10vh;
-  border: 1px solid red; }
+  border: 1px solid green; }
   .section-price .bg1 {
     position: absolute;
     width: 100%;
