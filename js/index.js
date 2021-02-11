@@ -86,7 +86,7 @@ window.addEventListener('scroll', () => {
     // console.log('rect', Math.abs(rect.y));
     
     // if(Math.abs(rect.y) > sectionMain.offsetHeight){
-    if(Math.abs(rect.y) > 20){
+    if(Math.abs(rect.y) > sectionMain.offsetHeight -20){
         burger.classList.add('burger-black')
     }else{
         burger.classList.remove('burger-black')
@@ -94,16 +94,17 @@ window.addEventListener('scroll', () => {
 
 })
 
-const  mainText = document.querySelector('.text-main h1');
-const  mainTextP = document.querySelector('.text-main p');
+const  mainH1 = document.querySelector('.text-main h1');
+const  mainP = document.querySelector('.text-main p');
 const  sectionMain = document.querySelector('.section-main ');
 
 let scroll = () => {
     let offset = window.pageYOffset;
     sectionMain.style.backgroundPositionY = offset * 0.3 + 'px';
-    mainText.style.marginTop  =offset / 2.2 + 'px';
-    // mainTextP.style.opacity  =offset / 100 * 0.1;
-    // console.log(offset);
+    mainH1.style.marginTop  =offset / 1.65 + 'px';
+    mainH1.style.marginLeft  =offset / 7 + 'px';
+    mainP.style.opacity  = 1 + offset *  (-0.008);
+    console.log(mainP.style.opacity);
     
 
 
