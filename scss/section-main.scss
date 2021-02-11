@@ -9,13 +9,13 @@ $blackcolor: black;
     // height: auto;
     position: relative;
     padding-top: 10vh;
-    border: 1px solid black;
+    // border: 1px solid black;
 }
 
 .section-main {
     @include section;
     // background-color: green;
-    background-image: url('../images/img (14).png');
+    background-image: url('../images/3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 60%;
@@ -25,14 +25,15 @@ $blackcolor: black;
 
     .text {
         position: absolute;
-        // width: 30%;
+       
         margin-top: 22vh;
         left: 5%;
 
         h1 {
             // font-size: calc((250vw - 30rem)/(80 - 30) * (1.5 - 1) + 1rem);
             // font-size: 1rem;
-            color: #EC14C9;
+            color: rgb(255, 0, 212);
+            // color: #EC14C9;
             font-family: Rochester;
             font-style: normal;
             font-weight: normal;
@@ -63,9 +64,10 @@ $blackcolor: black;
     }
 
     p {
-        margin-top: 0.3rem;
+        margin-top: .5rem !important;
         // font-size: calc((20vw - 30rem)/(80 - 30) * (1.5 - 1) + 1rem);
-        font-size: 3vh;
+        font-size: 2.8vh;
+        text-align: center;
     }
 }
 

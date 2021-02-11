@@ -23,7 +23,8 @@
     <nav class="menu">
         <div class="label">MENU</div>
         <ul>
-            <li class="item"><a onclick={closeNav()} href="#section-watercolor">Акварелью</a></li>
+            <li class="item"><a onclick={closeNav()} href="#section-main">Главная</a></li>
+            <li class="item"><a onclick={closeNav()} href="#section-watercolor">Акварель</a></li>
             <li class="item"><a onclick={closeNav()} href="#section-inc">Тушь</a></li>
             <li class="item"><a onclick={closeNav()} href="#section-pencil">Карандаш</a></li>
             <li class="item"><a onclick={closeNav()} href="#section-sepia">Сепия</a></li>
@@ -39,14 +40,14 @@
 
 
     <div class="container">
-        <div class="section-main">
+        <div class="section-main" id='section-main'>
 
             <div class="burger ">
                 <div></div>
                 <div></div>
             </div>
 
-            <div class="text">
+            <div class="text text-main">
                 <h1>Victory Art Line</h1>
                 <p>Портреты <br> на заказ <br> по фото</p>
             </div>
@@ -56,8 +57,8 @@
             <!-- <img class="bg" src="./images/img (1).png" alt=""> -->
             <div class="text section-text">
                 <h1>Портреты акварелью</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab distinctio, quae esse consequuntur
-                    molestias dicta illo voluptatibus ex omnis dolores?
+                <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более
+                    менее осмысленного текста рыбы на русском языке,
                 </p>
             </div>
 
@@ -135,7 +136,8 @@
             <!-- <img class="bg2" src="./images/incbg (1).png" alt=""> -->
             <div class="text section-text">
                 <h1>Портреты тушью</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab distinctio, quae esse consequuntur
+                <p> а начинающему оратору отточить навык публичных
+                    выступлений в домашних условиях
 
                 </p>
             </div>
@@ -199,7 +201,7 @@
 
             <div class="text section-text">
                 <h1>Портреты карандашом</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab distinctio, quae esse consequuntur
+                <p>образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.
 
                 </p>
             </div>
@@ -249,43 +251,43 @@
 
             <div class="text section-text">
                 <h1>Портреты Сепия</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab distinctio, quae esse consequuntur
+                <p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum, к
 
                 </p>
             </div>
 
             <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
-            uk-slider="clsActivated: uk-transition-active; center: true">
+                uk-slider="clsActivated: uk-transition-active; center: true">
 
-            <ul class="uk-slider-items uk-grid">
-                <li class="uk-width-3-4">
-                    <div class="uk-panel">
-                        <img  src="./images/img (8).png" alt="">
+                <ul class="uk-slider-items uk-grid">
+                    <li class="uk-width-3-4">
+                        <div class="uk-panel">
+                            <img src="./images/img (8).png" alt="">
 
-                    </div>
-                </li>
-                <li class="uk-width-3-4">
-                    <div class="uk-panel">
-                        <img src="./images/img (10).png" alt="">
+                        </div>
+                    </li>
+                    <li class="uk-width-3-4">
+                        <div class="uk-panel">
+                            <img src="./images/img (10).png" alt="">
 
-                    </div>
-                </li>
-                <li class="uk-width-3-4">
-                    <div class="uk-panel">
-                        <img src="./images/img (4).png" alt="">
+                        </div>
+                    </li>
+                    <li class="uk-width-3-4">
+                        <div class="uk-panel">
+                            <img src="./images/img (4).png" alt="">
 
-                    </div>
-                </li>
+                        </div>
+                    </li>
 
 
-            </ul>
+                </ul>
 
-            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
-                uk-slider-item="previous"></a>
-            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
-                uk-slider-item="next"></a>
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                    uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                    uk-slider-item="next"></a>
 
-        </div>
+            </div>
 
             <!-- <div class="swiper-container">
             <div class="swiper-wrapper">

@@ -32,7 +32,7 @@ const openNav = () => {
         .fromTo(li[2], .6, { opacity: 0, x: "10vh" }, { opacity: 1, x: "0", ease: Power2.easeInOut }, '-=.5')
         .fromTo(li[3], .6, { opacity: 0, x: "10vh" }, { opacity: 1, x: "0", ease: Power2.easeInOut }, '-=.5')
         .fromTo(li[4], .6, { opacity: 0, x: "10vh" }, { opacity: 1, x: "0", ease: Power2.easeInOut }, '-=.5')
-    // .fromTo(li[5], .6, { opacity: 0, x: "10vh" }, { opacity: 1, x: "0", ease: Power2.easeInOut }, '-=.5')
+    .fromTo(li[5], .6, { opacity: 0, x: "10vh" }, { opacity: 1, x: "0", ease: Power2.easeInOut }, '-=.5')
     // .fromTo(li[6], .6, { opacity: 0, x: "10vh" }, { opacity: 1, x: "0", ease: Power2.easeInOut }, '-=.5')
     // .fromTo(li[7], .6, { opacity: 0, x: "10vh" }, { opacity: 1, x: "0", ease: Power2.easeInOut }, '-=.5')
     return menustatus = !menustatus
@@ -44,8 +44,8 @@ const closeNav = () => {
     tl
         // .fromTo(li[7], .6, { opacity: 1, x: "0" }, { opacity: 0, x: "10vh", ease: Power2.easeInOut }, '-=.5')
         // .fromTo(li[6], .6, { opacity: 1, x: "0" }, { opacity: 0, x: "10vh", ease: Power2.easeInOut }, '-=.5')
-        // .fromTo(li[5], .6, { opacity: 1, x: "0" }, { opacity: 0, x: "10vh", ease: Power2.easeInOut }, '-=.5')
-        .fromTo(li[4], .6, { opacity: 1, x: "0" }, { opacity: 0, x: "10vh", ease: Power2.easeInOut })
+        .fromTo(li[5], .6, { opacity: 1, x: "0" }, { opacity: 0, x: "10vh", ease: Power2.easeInOut })
+        .fromTo(li[4], .6, { opacity: 1, x: "0" }, { opacity: 0, x: "10vh", ease: Power2.easeInOut }, '-=.5')
         .fromTo(li[3], .6, { opacity: 1, x: "0" }, { opacity: 0, x: "10vh", ease: Power2.easeInOut }, '-=.5')
         .fromTo(li[2], .6, { opacity: 1, x: "0" }, { opacity: 0, x: "10vh", ease: Power2.easeInOut }, '-=.5')
         .fromTo(li[1], .6, { opacity: 1, x: "0" }, { opacity: 0, x: "10vh", ease: Power2.easeInOut }, '-=.5')
@@ -85,10 +85,28 @@ window.addEventListener('scroll', () => {
     // console.log(sectionMain.offsetHeight);
     // console.log('rect', Math.abs(rect.y));
     
-    if(Math.abs(rect.y) > sectionMain.offsetHeight){
+    // if(Math.abs(rect.y) > sectionMain.offsetHeight){
+    if(Math.abs(rect.y) > 20){
         burger.classList.add('burger-black')
     }else{
         burger.classList.remove('burger-black')
     }
 
 })
+
+const  mainText = document.querySelector('.text-main h1');
+const  mainTextP = document.querySelector('.text-main p');
+const  sectionMain = document.querySelector('.section-main ');
+
+let scroll = () => {
+    let offset = window.pageYOffset;
+    sectionMain.style.backgroundPositionY = offset * 0.3 + 'px';
+    mainText.style.marginTop  =offset / 2.2 + 'px';
+    // mainTextP.style.opacity  =offset / 100 * 0.1;
+    // console.log(offset);
+    
+
+
+}
+
+window.addEventListener('scroll', scroll);

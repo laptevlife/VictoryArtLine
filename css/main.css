@@ -18,8 +18,7 @@
   min-height: -webkit-fill-available;
   position: relative;
   padding-top: 10vh;
-  border: 1px solid black;
-  background-image: url("../images/img (14).png");
+  background-image: url("../images/3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 60%;
@@ -29,7 +28,7 @@
     margin-top: 22vh;
     left: 5%; }
     .section-main .text h1 {
-      color: #EC14C9;
+      color: #ff00d4;
       font-family: Rochester;
       font-style: normal;
       font-weight: normal; }
@@ -49,16 +48,16 @@
   .section-text h1 {
     font-size: 4vh; }
   .section-text p {
-    margin-top: 0.3rem;
-    font-size: 3vh; }
+    margin-top: .5rem !important;
+    font-size: 2.8vh;
+    text-align: center; }
 
 .section-watercolor {
   width: 100%;
   min-height: 100vh !important;
   min-height: -webkit-fill-available;
   position: relative;
-  padding-top: 10vh;
-  border: 1px solid black; }
+  padding-top: 10vh; }
   .section-watercolor .bg {
     position: absolute;
     top: 0;
@@ -72,8 +71,7 @@
   min-height: 100vh !important;
   min-height: -webkit-fill-available;
   position: relative;
-  padding-top: 10vh;
-  border: 1px solid black; }
+  padding-top: 10vh; }
   .section-inc .bg1 {
     position: absolute;
     width: 30%;
@@ -91,8 +89,7 @@
   min-height: 100vh !important;
   min-height: -webkit-fill-available;
   position: relative;
-  padding-top: 10vh;
-  border: 1px solid black; }
+  padding-top: 10vh; }
   .section-pencil .bg1 {
     position: absolute;
     top: 25%;
@@ -107,8 +104,7 @@
   min-height: 100vh !important;
   min-height: -webkit-fill-available;
   position: relative;
-  padding-top: 10vh;
-  border: 1px solid black; }
+  padding-top: 10vh; }
   .section-sepia .bg1 {
     position: absolute;
     width: 100%;
@@ -123,8 +119,7 @@
   min-height: 100vh !important;
   min-height: -webkit-fill-available;
   position: relative;
-  padding-top: 10vh;
-  border: 1px solid black; }
+  padding-top: 10vh; }
   .section-price .bg1 {
     position: absolute;
     width: 100%;
@@ -165,7 +160,7 @@
   height: 20px;
   position: fixed;
   top: 3vh;
-  left: 3%;
+  right: 3%;
   box-sizing: border-box;
   z-index: 20;
   transition: all 0.8s ease; }
