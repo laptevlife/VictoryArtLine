@@ -163,7 +163,14 @@ $blackcolor: black;
 
 
 
-
+.uk-panel{
+    // background-color: orange;
+    img{
+        object-fit: cover;
+        //  background-color: red;
+          height: 100%
+    }
+}
 
 
 

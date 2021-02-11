@@ -134,6 +134,10 @@
   .section-price .text {
     margin-top: 20vh; }
 
+.uk-panel img {
+  object-fit: cover;
+  height: 100%; }
+
 .swiper-container {
   width: 100%;
   height: 100%; }
