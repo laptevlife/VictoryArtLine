@@ -4,7 +4,7 @@ $blackcolor: black;
 @mixin section {
     width: 100%;
     min-height: 100vh;
-    height: auto;
+    // height: auto;
     position: relative;
     padding-top: 10vh;
     border: 1px solid red;

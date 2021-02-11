@@ -15,7 +15,6 @@
 .section-main {
   width: 100%;
   min-height: 100vh;
-  height: auto;
   position: relative;
   padding-top: 10vh;
   border: 1px solid red;
@@ -55,7 +54,6 @@
 .section-watercolor {
   width: 100%;
   min-height: 100vh;
-  height: auto;
   position: relative;
   padding-top: 10vh;
   border: 1px solid red; }
@@ -70,7 +68,6 @@
 .section-inc {
   width: 100%;
   min-height: 100vh;
-  height: auto;
   position: relative;
   padding-top: 10vh;
   border: 1px solid red; }
@@ -89,7 +86,6 @@
 .section-pencil {
   width: 100%;
   min-height: 100vh;
-  height: auto;
   position: relative;
   padding-top: 10vh;
   border: 1px solid red; }
@@ -105,7 +101,6 @@
 .section-sepia {
   width: 100%;
   min-height: 100vh;
-  height: auto;
   position: relative;
   padding-top: 10vh;
   border: 1px solid red; }
@@ -121,7 +116,6 @@
 .section-price {
   width: 100%;
   min-height: 100vh;
-  height: auto;
   position: relative;
   padding-top: 10vh;
   border: 1px solid red; }
@@ -264,5 +258,4 @@ li {
 
 .container {
   width: 100%;
-  min-height: 100vh;
-  height: auto; }
+  min-height: 100vh; }
