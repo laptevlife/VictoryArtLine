@@ -17,7 +17,7 @@
   min-height: 100vh;
   height: auto;
   position: relative;
-  padding-top: 6vh;
+  padding-top: 10vh;
   background-image: url("../images/img (14).png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,17 +46,17 @@
   text-align: left;
   z-index: 10; }
   .section-text h1 {
-    font-size: calc((120vw - 30rem)/(80 - 30) * (1.5 - 1) + 1rem); }
+    font-size: 4vh; }
   .section-text p {
     margin-top: 0.2rem;
-    font-size: calc((20vw - 30rem)/(80 - 30) * (1.5 - 1) + 1rem); }
+    font-size: 3vh; }
 
 .section-watercolor {
   width: 100%;
   min-height: 100vh;
   height: auto;
   position: relative;
-  padding-top: 6vh; }
+  padding-top: 10vh; }
   .section-watercolor .bg {
     position: absolute;
     top: 0;
@@ -70,7 +70,7 @@
   min-height: 100vh;
   height: auto;
   position: relative;
-  padding-top: 6vh; }
+  padding-top: 10vh; }
   .section-inc .text {
     width: 80%; }
   .section-inc .bg1 {
@@ -90,11 +90,11 @@
   min-height: 100vh;
   height: auto;
   position: relative;
-  padding-top: 6vh; }
+  padding-top: 10vh; }
   .section-pencil .bg1 {
     position: absolute;
-    width: 90%;
-    top: 30vh;
+    top: 25%;
+    height: 70%;
     right: 0;
     z-index: -1; }
   .section-pencil .swiper-container {
@@ -105,7 +105,7 @@
   min-height: 100vh;
   height: auto;
   position: relative;
-  padding-top: 6vh; }
+  padding-top: 10vh; }
   .section-sepia .bg1 {
     position: absolute;
     width: 100%;
@@ -120,7 +120,7 @@
   min-height: 100vh;
   height: auto;
   position: relative;
-  padding-top: 6vh; }
+  padding-top: 10vh; }
   .section-price .bg1 {
     position: absolute;
     width: 100%;
@@ -128,21 +128,16 @@
     left: 0;
     z-index: -1; }
   .section-price .text {
-    margin-top: 30vh; }
+    margin-top: 20vh; }
 
 .swiper-container {
-  margin-top: 5vh;
   width: 100%;
-  padding-left: 5% !important;
-  height: 50vh; }
-  .swiper-container .swiper-pagination-bullet-active {
-    background-color: #dd8500; }
+  height: 100%; }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  width: auto !important;
-  height: 100% !important;
+  background: #fff;
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,8 +156,9 @@
   width: 50px;
   height: 20px;
   position: fixed;
-  top: 4vh;
+  top: 3vh;
   left: 3%;
+  box-sizing: border-box;
   z-index: 20;
   transition: all 0.8s ease; }
   .burger div {
@@ -237,9 +233,6 @@
   margin: 0;
   font-family: 'Sansation Light', arial;
   font-size: 36px; }
-
-body {
-  overflow-x: hidden; }
 
 *,
 *:before,

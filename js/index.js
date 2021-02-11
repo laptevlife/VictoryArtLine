@@ -64,33 +64,36 @@ const closeNav = () => {
 
 
 
-// .fromTo(animation, 1, {opacity: 0, height: "10%", width: "0%" }, { opacity: 1, height: "10%", width:"100%",  ease: Power2.easeInOut })
-// .fromTo(animation, 1, { height: "10%" }, { height: "100%",  ease: Power2.easeInOut })
-// .fromTo(h1, 1, { color: "black" }, { color: "white",  ease: Power2.easeInOut }, '-=1')
-// // .fromTo(h1, 1, { color: "linear-gradient(to top black, white)" }, {color: "linear-gradient(to top white, black)",  ease: Power2.easeInOut }, '-=1')
-// .fromTo(animation, 1, { height: "100%" }, { height: "10%",  top:0,  ease: Power2.easeInOut })
-// .fromTo(animation, 1, { width: "100%" }, { width: "0%",  ease: Power2.easeInOut })
-// .fromTo(hostel, 1.2, { opacity: 1, y: 0, }, { opacity: 0, y: -100 ,  ease: Power2.easeInOut })
 
 
+
+// var swiper = new Swiper('.swiper-container', {
+//     slidesPerView: 'auto',
+//     spaceBetween: 30,
+//     pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true,
+//     },
+// });
 
 var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 'auto',
-    spaceBetween: 30,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-});
-
-
+    slidesPerView: 1,
+    centeredSlides: false,
+    slidesPerGroupSkip: 1,
+    grabCursor: true,
+    keyboard: { enabled: true },
+    breakpoints: { 769: { slidesPerView: 2, slidesPerGroup: 2 } },
+    scrollbar: { el: '.swiper-scrollbar' },
+    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    pagination: { el: '.swiper-pagination', clickable: true }
+  });
 
 window.addEventListener('scroll', () => {
     const body = document.querySelector("body");
     const sectionMain = document.querySelector(".section-main");
     var rect = body.getBoundingClientRect();
-    console.log(sectionMain.offsetHeight);
-    console.log('rect', Math.abs(rect.y));
+    // console.log(sectionMain.offsetHeight);
+    // console.log('rect', Math.abs(rect.y));
     
     if(Math.abs(rect.y) > sectionMain.offsetHeight){
         burger.classList.add('burger-black')
