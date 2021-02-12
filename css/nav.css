@@ -3,7 +3,7 @@
   height: 30px;
   position: fixed;
   top: 3vh;
-  left: 3%;
+  right: 3%;
   box-sizing: border-box;
   z-index: 20;
   transition: all 0.8s ease; }

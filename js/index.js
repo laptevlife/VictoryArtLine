@@ -32,7 +32,7 @@ const openNav = () => {
         .fromTo(li[2], .6, { opacity: 0, x: "10vh" }, { opacity: 1, x: "0", ease: Power2.easeInOut }, '-=.5')
         .fromTo(li[3], .6, { opacity: 0, x: "10vh" }, { opacity: 1, x: "0", ease: Power2.easeInOut }, '-=.5')
         .fromTo(li[4], .6, { opacity: 0, x: "10vh" }, { opacity: 1, x: "0", ease: Power2.easeInOut }, '-=.5')
-    .fromTo(li[5], .6, { opacity: 0, x: "10vh" }, { opacity: 1, x: "0", ease: Power2.easeInOut }, '-=.5')
+        .fromTo(li[5], .6, { opacity: 0, x: "10vh" }, { opacity: 1, x: "0", ease: Power2.easeInOut }, '-=.5')
     // .fromTo(li[6], .6, { opacity: 0, x: "10vh" }, { opacity: 1, x: "0", ease: Power2.easeInOut }, '-=.5')
     // .fromTo(li[7], .6, { opacity: 0, x: "10vh" }, { opacity: 1, x: "0", ease: Power2.easeInOut }, '-=.5')
     return menustatus = !menustatus
@@ -81,33 +81,48 @@ const closeNav = () => {
 window.addEventListener('scroll', () => {
     const body = document.querySelector("body");
     const sectionMain = document.querySelector(".section-main");
-    var rect = body.getBoundingClientRect();
+    const mainH1 = document.querySelector('.text-main h1');
+    const mainP = document.querySelector('.text-main p');
+    // const sectionMain = document.querySelector('.section-main ');
+    const rect = body.getBoundingClientRect();
+    const  offset = window.pageYOffset;
     // console.log(sectionMain.offsetHeight);
+    // console.log(offset);
     // console.log('rect', Math.abs(rect.y));
-    
+
+    // if(Math.abs(rect.y) >)
+
     // if(Math.abs(rect.y) > sectionMain.offsetHeight){
-    if(Math.abs(rect.y) > sectionMain.offsetHeight -20){
+    if (Math.abs(rect.y) > sectionMain.offsetHeight - 20) {
         burger.classList.add('burger-black')
-    }else{
+
+    } else {
         burger.classList.remove('burger-black')
+        sectionMain.style.backgroundPositionY = offset * 0.3 + 'px';
+            mainH1.style.marginTop  =offset / 1.6 + 'px';
+            // mainH1.style.marginLeft  =offset / 7 + 'px';
+
+            mainH1.style.opacity  = 1 + offset *  (-0.001);
+            mainP.style.opacity   = 1 + offset *  (-0.003);
     }
 
 })
 
-const  mainH1 = document.querySelector('.text-main h1');
-const  mainP = document.querySelector('.text-main p');
-const  sectionMain = document.querySelector('.section-main ');
+// const  mainH1 = document.querySelector('.text-main h1');
+// const  mainP = document.querySelector('.text-main p');
+// const  sectionMain = document.querySelector('.section-main ');
 
-let scroll = () => {
-    let offset = window.pageYOffset;
-    sectionMain.style.backgroundPositionY = offset * 0.3 + 'px';
-    mainH1.style.marginTop  =offset / 1.65 + 'px';
-    mainH1.style.marginLeft  =offset / 7 + 'px';
-    mainP.style.opacity  = 1 + offset *  (-0.008);
-    console.log(mainP.style.opacity);
-    
+// let scroll = () => {
+
+//     let offset = window.pageYOffset;
+//     sectionMain.style.backgroundPositionY = offset * 0.3 + 'px';
+//     mainH1.style.marginTop  =offset / 1.65 + 'px';
+//     mainH1.style.marginLeft  =offset / 7 + 'px';
+//     mainP.style.opacity  = 1 + offset *  (-0.008);
+//     // console.log(mainP.style.opacity);
 
 
-}
 
-window.addEventListener('scroll', scroll);
+// }
+
+// window.addEventListener('scroll', scroll);
