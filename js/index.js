@@ -86,8 +86,8 @@ window.addEventListener('scroll', () => {
     if(window.pageYOffset < sectionMain.offsetHeight){
         mainP.style.opacity = 1 + offset * (-0.003);
         mainH1.style.opacity = 1.7 + offset * (-0.0039);
-        console.log('1',  1 + offset * (-0.003));
-        console.log('2', 1 + offset * (-0.001));
+        // console.log('1',  1 + offset * (-0.003));
+        // console.log('2', 1 + offset * (-0.001));
         
     }
 
@@ -105,9 +105,54 @@ window.addEventListener('scroll', () => {
 
 })
 
-const x = ()=>{
-    const el = document.querySelector('.section-pencil');
-    el.scrollIntoView({behavior: "smooth"}); // Прокрутка до верхней границы
-    // el.scrollIntoView(false);
+const emptySection = document.querySelector('.section-empty');
+const watercolorSection = document.querySelector('.section-watercolor');
+const incSection = document.querySelector('.section-inc');
+const pencilSection = document.querySelector('.section-pencil');
+const sepiaSection = document.querySelector('.section-sepia');
+const priceSection = document.querySelector('.section-price');
+
+const scrollTo = ()=>{
+
+    pencilSection.scrollIntoView({behavior: "smooth"}); // Прокрутка до верхней границы
+    // watercolorSection.scrollIntoView(false);
+    console.log('scrolltoo');
+    
     
 }
+
+// emptySection.addEventListener('click', ()=> scrollTo() )
+
+// SWIPE
+var touchstartX = 0;
+var touchstartY = 0;
+var touchendX = 0;
+var touchendY = 0;
+
+
+emptySection.addEventListener('touchstart', function(event) {
+    touchstartX = event.changedTouches[0].screenX;
+    touchstartY = event.changedTouches[0].screenY;
+
+});
+
+emptySection.addEventListener('touchend', function(event) {
+    touchendX = event.changedTouches[0].screenX;
+    touchendY = event.changedTouches[0].screenY;
+    console.log('touch');
+    
+    scrollTo();
+}); 
+
+// function swipe() {
+   
+//     if (touchendY < touchstartY) {
+//         console.log('-');
+//         scrollTo();
+//     }
+//     if (touchendY > touchstartY) {
+//         console.log('+');
+        
+//         scrollTo();
+//     }
+// }
