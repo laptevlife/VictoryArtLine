@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-    <!-- <link rel="stylesheet" type="text/css" href="/libs/uicss/uikit.min.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="/libs/uicss/uikit.min.css" />
 
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/css/uikit.min.css" /> -->
 
@@ -14,6 +14,8 @@
 
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit-icons.min.js"></script>
 
     <title>Victory Art Line</title>
 </head>
@@ -55,7 +57,7 @@
 
         <div class="section-watercolor" id='section-watercolor'>
             <!-- <img class="bg" src="./images/img (1).png" alt=""> -->
-            <div class="text section-text">
+            <div class="text section-text" data-aos="fade-up" data-aos-duration="800">
                 <h1>Портреты акварелью</h1>
                 <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более
                     менее осмысленного текста рыбы на русском языке,
@@ -65,8 +67,11 @@
 
 
 
-            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
-                uk-slider="clsActivated: uk-transition-active; center: true">
+            <div 
+            data-aos="fade-up" 
+            data-aos-duration="1200" 
+            class="uk-position-relative uk-visible-toggle uk-light"
+                tabindex="-1" uk-slider="clsActivated: uk-transition-active; center: true">
 
                 <ul class="uk-slider-items uk-grid">
                     <li class="uk-width-3-4">
@@ -134,7 +139,7 @@
         <div class="section-inc" id='section-inc'>
             <!-- <img class="bg1" src="./images/incbg (2).png" alt=""> -->
             <!-- <img class="bg2" src="./images/incbg (1).png" alt=""> -->
-            <div class="text section-text">
+            <div class="text section-text" data-aos="fade-up" data-aos-duration="800">
                 <h1>Портреты тушью</h1>
                 <p> а начинающему оратору отточить навык публичных
                     выступлений в домашних условиях
@@ -144,7 +149,9 @@
 
 
             <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
-                uk-slider="clsActivated: uk-transition-active; center: true">
+                uk-slider="clsActivated: uk-transition-active; center: true"
+                data-aos="fade-up" 
+                data-aos-duration="1200" >
 
                 <ul class="uk-slider-items uk-grid">
                     <li class="uk-width-3-4">
@@ -199,9 +206,10 @@
         <div class="section-pencil" id='section-pencil'>
             <!-- <img class="bg1" src="./images/img (16).png" alt=""> -->
 
-            <div class="text section-text">
+            <div class="text section-text" data-aos="fade-up" data-aos-duration="800">
                 <h1>Портреты карандашом</h1>
-                <p>образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.
+                <p>образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и
+                    живым для визуально-слухового восприятия.
 
                 </p>
             </div>
@@ -217,7 +225,9 @@
             <div class="swiper-pagination"></div>
         </div> -->
             <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
-                uk-slider="clsActivated: uk-transition-active; center: true">
+                uk-slider="clsActivated: uk-transition-active; center: true"
+                data-aos="fade-up" 
+                data-aos-duration="1200" >
 
                 <ul class="uk-slider-items uk-grid">
                     <li class="uk-width-3-4">
@@ -249,7 +259,7 @@
         <div class="section-sepia" id='section-sepia'>
             <!-- <img class="bg1" src="./images/img (2).png" alt=""> -->
 
-            <div class="text section-text">
+            <div class="text section-text" data-aos="fade-up" data-aos-duration="800">
                 <h1>Портреты Сепия</h1>
                 <p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum, к
 
@@ -257,7 +267,9 @@
             </div>
 
             <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
-                uk-slider="clsActivated: uk-transition-active; center: true">
+                uk-slider="clsActivated: uk-transition-active; center: true"
+                data-aos="fade-up" 
+                data-aos-duration="1200" >
 
                 <ul class="uk-slider-items uk-grid">
                     <li class="uk-width-3-4">
@@ -306,7 +318,7 @@
         <div class="section-price" id='section-price'>
             <img class="bg1" src="./images/img (3).png" alt="">
 
-            <div class="text section-text">
+            <div class="text section-text" data-aos="fade-up" data-aos-duration="800">
                 <h1>Рассчет стоимости</h1>
                 <p> Выберите материал и размер:</p>
 
@@ -320,6 +332,11 @@
 
     <!-- <script src="/libs/uijs/uikit.min.js"></script>
     <script src="/libs/uijs/uikit-icons.min.js"></script> -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
         integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>

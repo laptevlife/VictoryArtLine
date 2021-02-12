@@ -2,26 +2,37 @@ const burger = document.querySelector('.burger');
 const menu = document.querySelector(".menu");
 const label = document.querySelector(".label");
 const li = document.querySelectorAll("li");
-// const animation = document.querySelector(".animation");
+const texts = document.querySelectorAll(".section-text");
+
+
+
+
+(function () {
+
+    // console.log('i', sections);
+
+    texts.forEach(i => {
+
+        i.setAttribute('data-aos', "fade-in");
+    //     data-aos="fade-up"
+    //  data-aos-duration="3000"
+     i.setAttribute( 'data-aos-duration',"3000")
+    })
+})()
 
 let menustatus = false;
 
 burger.addEventListener('click', () => {
-
-    // burger.classList.toggle('burger-active')
     menustatus ? closeNav() : openNav()
-    // return menustatus = !menustatus
-    // openNav()
-
 
 })
 
-console.log(menustatus);
+// console.log(menustatus);
 
 const tl = new TimelineMax();
 
 const openNav = () => {
-    console.log('open');
+    // console.log('open');
     burger.classList.toggle('burger-active')
     tl
         .fromTo(menu, 0, { x: "100vw", }, { x: "0", ease: Power2.easeInOut })
@@ -39,7 +50,7 @@ const openNav = () => {
     // .fromTo(menu, 1.2, {  opacity: 0, x: "0",   }, { opacity: 1, x: "0", ease: Power2.easeInOut })
 }
 const closeNav = () => {
-    console.log('close');
+    // console.log('close');
 
     tl
         // .fromTo(li[7], .6, { opacity: 1, x: "0" }, { opacity: 0, x: "10vh", ease: Power2.easeInOut }, '-=.5')
@@ -66,63 +77,34 @@ const closeNav = () => {
 
 
 
-
-// var swiper = new Swiper('.swiper-container', {
-//     slidesPerView: 'auto',
-//     spaceBetween: 30,
-//     pagination: {
-//         el: '.swiper-pagination',
-//         clickable: true,
-//     },
-// });
-
-
-
 window.addEventListener('scroll', () => {
     const body = document.querySelector("body");
     const sectionMain = document.querySelector(".section-main");
     const mainH1 = document.querySelector('.text-main h1');
     const mainP = document.querySelector('.text-main p');
-    // const sectionMain = document.querySelector('.section-main ');
     const rect = body.getBoundingClientRect();
-    const  offset = window.pageYOffset;
+    const offset = window.pageYOffset;
     // console.log(sectionMain.offsetHeight);
     // console.log(offset);
     // console.log('rect', Math.abs(rect.y));
 
-    // if(Math.abs(rect.y) >)
-
-    // if(Math.abs(rect.y) > sectionMain.offsetHeight){
-    if (Math.abs(rect.y) > sectionMain.offsetHeight - 20) {
+    if (Math.abs(rect.y) > 20) {
         burger.classList.add('burger-black')
 
     } else {
         burger.classList.remove('burger-black')
-        sectionMain.style.backgroundPositionY = offset * 0.3 + 'px';
-            mainH1.style.marginTop  =offset / 1.6 + 'px';
-            // mainH1.style.marginLeft  =offset / 7 + 'px';
 
-            mainH1.style.opacity  = 1 + offset *  (-0.001);
-            mainP.style.opacity   = 1 + offset *  (-0.003);
+    }
+    if (Math.abs(rect.y) > sectionMain.offsetHeight) {
+        return;
+    } else {
+
+        sectionMain.style.backgroundPositionY = offset * 0.2 + 'px';
+        mainH1.style.marginTop = offset / 1.6 + 'px';
+        // mainH1.style.marginLeft  =offset / 7 + 'px';
+        mainH1.style.opacity = 1 + offset * (-0.001);
+        mainP.style.opacity = 1 + offset * (-0.003);
     }
 
 })
 
-// const  mainH1 = document.querySelector('.text-main h1');
-// const  mainP = document.querySelector('.text-main p');
-// const  sectionMain = document.querySelector('.section-main ');
-
-// let scroll = () => {
-
-//     let offset = window.pageYOffset;
-//     sectionMain.style.backgroundPositionY = offset * 0.3 + 'px';
-//     mainH1.style.marginTop  =offset / 1.65 + 'px';
-//     mainH1.style.marginLeft  =offset / 7 + 'px';
-//     mainP.style.opacity  = 1 + offset *  (-0.008);
-//     // console.log(mainP.style.opacity);
-
-
-
-// }
-
-// window.addEventListener('scroll', scroll);
