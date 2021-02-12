@@ -9,18 +9,18 @@
   background-size: cover;
   background-position: 60%;
   position: relative;
-  transition: "all 0.2s ease"; }
+  transition: "all 0.9s ease"; }
   .section-main .text {
     position: absolute;
     margin-top: 22vh;
     left: 5%;
-    transition: "all 0.2s ease"; }
+    transition: "all 0.9s ease"; }
     .section-main .text h1 {
       color: #ff00d4;
       font-family: Rochester;
       font-style: normal;
       font-weight: normal;
-      transition: "all 0.2s ease"; }
+      transition: "all 0.9s ease"; }
     .section-main .text p {
       margin-top: 10%;
       font-family: 'Sansation Light';
@@ -29,7 +29,7 @@
       color: red;
       font-family: Sansation Light;
       font-style: normal;
-      transition: "all 0.2s ease"; }
+      transition: "all 0.9s ease"; }
 
 .section-text {
   padding: 0 4%;
