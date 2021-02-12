@@ -106,7 +106,7 @@ window.addEventListener('scroll', () => {
             // mainH1.style.opacity = 1 + offset * (-0.001);
             mainP.style.opacity = 1 + offset * (-0.003);
 
-        }, 10)
+        }, 100)
         
         // sectionMain.style.backgroundPositionY = offset * 0.2 + 'px';
         // mainH1.style.marginTop = offset / 1.7 + 'px';
