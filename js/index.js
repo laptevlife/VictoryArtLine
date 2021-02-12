@@ -109,19 +109,9 @@ window.addEventListener('scroll', () => {
             // mainH1.style.opacity = 1 + offset * (-0.001);
             mainP.style.opacity = 1 + offset * (-0.003);
             mainH1.setAttribute("style", "margin-top: " + offset / 1.7 + 'px' );
-            // mainP.setAttribute("style", "opacity: " + 1 + offset * (-0.003) );
-            // console.log(+ 1 + offset * (-0.003) );
-            
-            // sectionMain.setAttribute("style", "background-position: " + 50 +'%' + offset * 0.2 + "px");
-            // sectionMain.setAttribute("style", "transform: " + translate(offset * 0.2 + 'px'));
-
-            // sectionMain.style.transform = scale(20)
-            // sectionMain.style.msTransform = `translateY(${offset * 0.2}  + 'px')`
-
-            sectionMain.setAttribute('style',`transform:translateY(${offset *(-0.2) + 'px'})`);
-            // sectionMain.style.transform = "rotate(50px)"
+    
         
-        // sectionMain.style.backgroundPositionY = offset * 0.2 + 'px';
+        sectionMain.style.backgroundPositionY = offset * 0.2 + 'px';
         // mainH1.style.marginTop = offset / 1.7 + 'px';
         // // mainH1.style.marginLeft  =offset / 7 + 'px';
         // // mainH1.style.opacity = 1 + offset * (-0.001);
@@ -130,3 +120,9 @@ window.addEventListener('scroll', () => {
 
 })
 
+
+
+const x = (y)=>{
+    console.log('x', y);
+    
+}
