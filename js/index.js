@@ -112,9 +112,14 @@ window.addEventListener('scroll', () => {
             // mainP.setAttribute("style", "opacity: " + 1 + offset * (-0.003) );
             // console.log(+ 1 + offset * (-0.003) );
             
-            sectionMain.setAttribute("style", "background-position: " + 50 +'%' + offset * 0.2 + "px");
+            // sectionMain.setAttribute("style", "background-position: " + 50 +'%' + offset * 0.2 + "px");
+            // sectionMain.setAttribute("style", "transform: " + translate(offset * 0.2 + 'px'));
 
-            // layer.style.transform = translate3d
+            // sectionMain.style.transform = scale(20)
+            // sectionMain.style.msTransform = `translateY(${offset * 0.2}  + 'px')`
+
+            sectionMain.setAttribute('style',`transform:translateY(${offset *(-0.2) + 'px'})`);
+            // sectionMain.style.transform = "rotate(50px)"
         
         // sectionMain.style.backgroundPositionY = offset * 0.2 + 'px';
         // mainH1.style.marginTop = offset / 1.7 + 'px';

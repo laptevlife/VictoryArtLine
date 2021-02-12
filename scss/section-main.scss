@@ -1,7 +1,7 @@
 $whitecolor: white;
 $blackcolor: black;
 
-$mainTransition : 'all 0.1s ease';
+$mainTransition : 'all 10s ease';
 
 @mixin section {
     width: 100%;
@@ -11,7 +11,7 @@ $mainTransition : 'all 0.1s ease';
     // height: auto;
     position: relative;
     padding-top: 10vh;
-    // border: 1px solid black;
+    border: 1px solid black;
 }
 
 .section-main {

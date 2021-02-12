@@ -4,23 +4,24 @@
   min-height: -webkit-fill-available;
   position: relative;
   padding-top: 10vh;
+  border: 1px solid black;
   background-image: url("../images/3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 60%;
   position: relative;
-  transition: "all 0.1s ease"; }
+  transition: "all 10s ease"; }
   .section-main .text {
     position: absolute;
     margin-top: 22vh;
     left: 5%;
-    transition: "all 0.1s ease"; }
+    transition: "all 10s ease"; }
     .section-main .text h1 {
       color: #ff00d4;
       font-family: Rochester;
       font-style: normal;
       font-weight: normal;
-      transition: "all 0.1s ease"; }
+      transition: "all 10s ease"; }
     .section-main .text p {
       margin-top: 10%;
       font-family: 'Sansation Light';
@@ -29,7 +30,7 @@
       color: yellow;
       font-family: Sansation Light;
       font-style: normal;
-      transition: "all 0.1s ease"; }
+      transition: "all 10s ease"; }
 
 .section-text {
   padding: 0 4%;
@@ -47,7 +48,8 @@
   min-height: 100vh !important;
   min-height: -webkit-fill-available;
   position: relative;
-  padding-top: 10vh; }
+  padding-top: 10vh;
+  border: 1px solid black; }
   .section-watercolor .bg {
     position: absolute;
     top: 0;
@@ -61,7 +63,8 @@
   min-height: 100vh !important;
   min-height: -webkit-fill-available;
   position: relative;
-  padding-top: 10vh; }
+  padding-top: 10vh;
+  border: 1px solid black; }
   .section-inc .bg1 {
     position: absolute;
     width: 30%;
@@ -79,7 +82,8 @@
   min-height: 100vh !important;
   min-height: -webkit-fill-available;
   position: relative;
-  padding-top: 10vh; }
+  padding-top: 10vh;
+  border: 1px solid black; }
   .section-pencil .bg1 {
     position: absolute;
     top: 25%;
@@ -94,7 +98,8 @@
   min-height: 100vh !important;
   min-height: -webkit-fill-available;
   position: relative;
-  padding-top: 10vh; }
+  padding-top: 10vh;
+  border: 1px solid black; }
   .section-sepia .bg1 {
     position: absolute;
     width: 100%;
@@ -109,7 +114,8 @@
   min-height: 100vh !important;
   min-height: -webkit-fill-available;
   position: relative;
-  padding-top: 10vh; }
+  padding-top: 10vh;
+  border: 1px solid black; }
   .section-price .bg1 {
     position: absolute;
     width: 100%;
