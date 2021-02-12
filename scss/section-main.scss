@@ -1,7 +1,7 @@
 $whitecolor: white;
 $blackcolor: black;
 
-$mainTransition : 'all 0.9s ease';
+$mainTransition : 'all 0.1s ease';
 
 @mixin section {
     width: 100%;
@@ -51,7 +51,7 @@ $mainTransition : 'all 0.9s ease';
             font-size: 1.5rem;
             line-height: 1.8rem;
             // color: #E3BBDD;
-            color: red;
+            color: green;
             font-family: Sansation Light;
             font-style: normal;
             transition: $mainTransition;
