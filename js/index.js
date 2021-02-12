@@ -98,12 +98,21 @@ window.addEventListener('scroll', () => {
     if (Math.abs(rect.y) > sectionMain.offsetHeight) {
         return;
     } else {
+        console.log(Math.abs(rect.y));
+        setTimeout(()=>{
+            sectionMain.style.backgroundPositionY = offset * 0.2 + 'px';
+            mainH1.style.marginTop = offset / 1.7 + 'px';
+            // mainH1.style.marginLeft  =offset / 7 + 'px';
+            // mainH1.style.opacity = 1 + offset * (-0.001);
+            mainP.style.opacity = 1 + offset * (-0.003);
 
-        sectionMain.style.backgroundPositionY = offset * 0.2 + 'px';
-        mainH1.style.marginTop = offset / 1.6 + 'px';
-        // mainH1.style.marginLeft  =offset / 7 + 'px';
-        mainH1.style.opacity = 1 + offset * (-0.001);
-        mainP.style.opacity = 1 + offset * (-0.003);
+        }, 10)
+        
+        // sectionMain.style.backgroundPositionY = offset * 0.2 + 'px';
+        // mainH1.style.marginTop = offset / 1.7 + 'px';
+        // // mainH1.style.marginLeft  =offset / 7 + 'px';
+        // // mainH1.style.opacity = 1 + offset * (-0.001);
+        // mainP.style.opacity = 1 + offset * (-0.003);
     }
 
 })
