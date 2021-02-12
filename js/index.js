@@ -7,18 +7,18 @@ const texts = document.querySelectorAll(".section-text");
 
 
 
-(function () {
+// (function () {
 
-    // console.log('i', sections);
+//     // console.log('i', sections);
 
-    texts.forEach(i => {
+//     texts.forEach(i => {
 
-        i.setAttribute('data-aos', "fade-in");
-    //     data-aos="fade-up"
-    //  data-aos-duration="3000"
-     i.setAttribute( 'data-aos-duration',"3000")
-    })
-})()
+//         i.setAttribute('data-aos', "fade-in");
+//     //     data-aos="fade-up"
+//     //  data-aos-duration="3000"
+//      i.setAttribute( 'data-aos-duration',"3000")
+//     })
+// })()
 
 let menustatus = false;
 
