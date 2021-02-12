@@ -1,7 +1,7 @@
 $whitecolor: white;
 $blackcolor: black;
 
-$mainTransition : 'all 10s ease';
+$mainTransition : 'all 0.1s ease';
 
 @mixin section {
     width: 100%;
@@ -12,6 +12,8 @@ $mainTransition : 'all 10s ease';
     position: relative;
     padding-top: 8vh;
     border: 1px solid black;
+    background-color: #fff;
+    z-index: 1;
 }
 
 .section-main {
@@ -23,6 +25,10 @@ $mainTransition : 'all 10s ease';
     background-position: 60%;
     position: relative;
     transition: $mainTransition;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
 
 
 
@@ -81,6 +87,7 @@ $mainTransition : 'all 10s ease';
 
 .section-watercolor {
     @include section;
+    margin-top: 100vh;
  
 
     .bg {

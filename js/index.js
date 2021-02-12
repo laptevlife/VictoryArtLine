@@ -7,19 +7,6 @@ const texts = document.querySelectorAll(".section-text");
 
 
 
-// (function () {
-
-//     // console.log('i', sections);
-
-//     texts.forEach(i => {
-
-//         i.setAttribute('data-aos', "fade-in");
-//     //     data-aos="fade-up"
-//     //  data-aos-duration="3000"
-//      i.setAttribute( 'data-aos-duration',"3000")
-//     })
-// })()
-
 let menustatus = false;
 
 burger.addEventListener('click', () => {
@@ -74,72 +61,42 @@ const closeNav = () => {
 }
 
 
-
+const body = document.querySelector("body");
+const sectionMain = document.querySelector(".section-main");
+const mainH1 = document.querySelector('.text-main h1');
+const mainP = document.querySelector('.text-main p');
+const rect = body.getBoundingClientRect();
 
 
 window.addEventListener('scroll', () => {
-    const body = document.querySelector("body");
-    const sectionMain = document.querySelector(".section-main");
-    const mainH1 = document.querySelector('.text-main h1');
-    const mainP = document.querySelector('.text-main p');
-    const rect = body.getBoundingClientRect();
-    const offset = Math.round( window.pageYOffset);
-    // console.log(sectionMain.offsetHeight);
-    // console.log(offset);
-    // console.log('rect', Math.abs(rect.y));
+
+    const offset = Math.round(window.pageYOffset);
+    // console.log('rect',  Math.abs(rect.y));
+    console.log('pageYOffset',  window.pageYOffset);    
 
 
-    if (Math.abs(rect.y) > 20) {
+    if (window.pageYOffset > sectionMain.offsetHeight -20) {
         burger.classList.add('burger-black')
 
     } else {
         burger.classList.remove('burger-black')
 
-    }
-    if (Math.abs(rect.y) > sectionMain.offsetHeight) {
-        return;
-    } else {
-        // console.log(Math.abs(rect.y));
-   
-            // sectionMain.style.backgroundPositionY = offset * 0.2 + 'px';
+    }  
 
-            mainH1.style.marginTop = offset / 1.7 + 'px';
 
-            // mainH1.style.marginLeft  =offset / 7 + 'px';
-            // mainH1.style.opacity = 1 + offset * (-0.001);
-            mainP.style.opacity = 1 + offset * (-0.003);
-            // mainH1.setAttribute("style", "margin-top: " + offset / 1.7 + 'px' );
-    
-        
-        sectionMain.style.backgroundPositionY = offset * 0.2 + 'px';
-        // mainH1.style.marginTop = offset / 1.7 + 'px';
-        // // mainH1.style.marginLeft  =offset / 7 + 'px';
-        // // mainH1.style.opacity = 1 + offset * (-0.001);
-        // mainP.style.opacity = 1 + offset * (-0.003);
-    }
+    //     // sectionMain.style.backgroundPositionY = offset * 0.2 + 'px';
+    //     mainH1.style.marginTop = offset / 1.7 + 'px';
+    //     // mainH1.style.marginLeft  =offset / 7 + 'px';
+    //     // mainH1.style.opacity = 1 + offset * (-0.001);
+    //     mainP.style.opacity = 1 + offset * (-0.003);
+    //     // mainH1.setAttribute("style", "margin-top: " + offset / 1.7 + 'px' );
+
 
 })
 
-
-
-// const x = (y)=>{
-//     console.log('x', y);
-//     window.location='/#section-price'
+const x = ()=>{
+    // window.pageYOffset=0
+    console.log('x');
+    window.location = '/'
     
-// }
-var swiper = new Swiper('.swiper-container', {
-    effect: 'coverflow',
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: 'auto',
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  });
+}

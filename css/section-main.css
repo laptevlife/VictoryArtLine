@@ -5,23 +5,29 @@
   position: relative;
   padding-top: 8vh;
   border: 1px solid black;
+  background-color: #fff;
+  z-index: 1;
   background-image: url("../images/4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 60%;
   position: relative;
-  transition: "all 10s ease"; }
+  transition: "all 0.1s ease";
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; }
   .section-main .text {
     position: absolute;
     margin-top: 22vh;
     left: 5%;
-    transition: "all 10s ease"; }
+    transition: "all 0.1s ease"; }
     .section-main .text h1 {
       color: #ff00d4;
       font-family: Rochester;
       font-style: normal;
       font-weight: normal;
-      transition: "all 10s ease"; }
+      transition: "all 0.1s ease"; }
     .section-main .text p {
       margin-top: 10%;
       font-family: 'Sansation Light';
@@ -30,7 +36,7 @@
       color: #E3BBDD;
       font-family: Sansation Light;
       font-style: normal;
-      transition: "all 10s ease"; }
+      transition: "all 0.1s ease"; }
 
 .section-text {
   padding: 0 5%;
@@ -50,7 +56,10 @@
   min-height: -webkit-fill-available;
   position: relative;
   padding-top: 8vh;
-  border: 1px solid black; }
+  border: 1px solid black;
+  background-color: #fff;
+  z-index: 1;
+  margin-top: 100vh; }
   .section-watercolor .bg {
     position: absolute;
     top: 0;
@@ -65,7 +74,9 @@
   min-height: -webkit-fill-available;
   position: relative;
   padding-top: 8vh;
-  border: 1px solid black; }
+  border: 1px solid black;
+  background-color: #fff;
+  z-index: 1; }
   .section-inc .bg1 {
     position: absolute;
     width: 30%;
@@ -84,7 +95,9 @@
   min-height: -webkit-fill-available;
   position: relative;
   padding-top: 8vh;
-  border: 1px solid black; }
+  border: 1px solid black;
+  background-color: #fff;
+  z-index: 1; }
   .section-pencil .bg1 {
     position: absolute;
     top: 25%;
@@ -100,7 +113,9 @@
   min-height: -webkit-fill-available;
   position: relative;
   padding-top: 8vh;
-  border: 1px solid black; }
+  border: 1px solid black;
+  background-color: #fff;
+  z-index: 1; }
   .section-sepia .bg1 {
     position: absolute;
     width: 100%;
@@ -116,7 +131,9 @@
   min-height: -webkit-fill-available;
   position: relative;
   padding-top: 8vh;
-  border: 1px solid black; }
+  border: 1px solid black;
+  background-color: #fff;
+  z-index: 1; }
   .section-price .bg1 {
     position: absolute;
     width: 100%;
