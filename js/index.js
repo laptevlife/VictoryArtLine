@@ -105,6 +105,25 @@ window.addEventListener('scroll', () => {
 
 })
 
+
+
+var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+
 const emptySection = document.querySelector('.section-empty');
 const watercolorSection = document.querySelector('.section-watercolor');
 const incSection = document.querySelector('.section-inc');
@@ -124,25 +143,25 @@ const scrollTo = ()=>{
 // emptySection.addEventListener('click', ()=> scrollTo() )
 
 // SWIPE
-var touchstartX = 0;
-var touchstartY = 0;
-var touchendX = 0;
-var touchendY = 0;
+// var touchstartX = 0;
+// var touchstartY = 0;
+// var touchendX = 0;
+// var touchendY = 0;
 
 
-emptySection.addEventListener('touchstart', function(event) {
-    touchstartX = event.changedTouches[0].screenX;
-    touchstartY = event.changedTouches[0].screenY;
+// emptySection.addEventListener('touchstart', function(event) {
+//     touchstartX = event.changedTouches[0].screenX;
+//     touchstartY = event.changedTouches[0].screenY;
 
-});
+// });
 
-emptySection.addEventListener('touchend', function(event) {
-    touchendX = event.changedTouches[0].screenX;
-    touchendY = event.changedTouches[0].screenY;
-    console.log('touch');
+// emptySection.addEventListener('touchend', function(event) {
+//     touchendX = event.changedTouches[0].screenX;
+//     touchendY = event.changedTouches[0].screenY;
+//     console.log('touch');
     
-    scrollTo();
-}); 
+//     scrollTo();
+// }); 
 
 // function swipe() {
    
