@@ -103,12 +103,12 @@ window.addEventListener('scroll', () => {
    
             // sectionMain.style.backgroundPositionY = offset * 0.2 + 'px';
 
-            // mainH1.style.marginTop = offset / 1.7 + 'px';
+            mainH1.style.marginTop = offset / 1.7 + 'px';
 
             // mainH1.style.marginLeft  =offset / 7 + 'px';
             // mainH1.style.opacity = 1 + offset * (-0.001);
             mainP.style.opacity = 1 + offset * (-0.003);
-            mainH1.setAttribute("style", "margin-top: " + offset / 1.7 + 'px' );
+            // mainH1.setAttribute("style", "margin-top: " + offset / 1.7 + 'px' );
     
         
         sectionMain.style.backgroundPositionY = offset * 0.2 + 'px';
@@ -122,7 +122,24 @@ window.addEventListener('scroll', () => {
 
 
 
-const x = (y)=>{
-    console.log('x', y);
+// const x = (y)=>{
+//     console.log('x', y);
+//     window.location='/#section-price'
     
-}
+// }
+var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });

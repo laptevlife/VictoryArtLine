@@ -3,9 +3,9 @@
   min-height: 100vh !important;
   min-height: -webkit-fill-available;
   position: relative;
-  padding-top: 10vh;
+  padding-top: 8vh;
   border: 1px solid black;
-  background-image: url("../images/3.jpg");
+  background-image: url("../images/4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 60%;
@@ -33,22 +33,23 @@
       transition: "all 10s ease"; }
 
 .section-text {
-  padding: 0 4%;
+  padding: 0 5%;
   text-align: center;
   z-index: 10; }
   .section-text h1 {
-    font-size: 4vh; }
+    font-size: calc((220vh - 30rem)/(80 - 30) * (1.5 - 1) + 1rem); }
   .section-text p {
     margin-top: .5rem !important;
-    font-size: 2.8vh;
-    text-align: center; }
+    font-size: calc((120vh - 30rem)/(80 - 30) * (1.5 - 1) + 1rem);
+    text-align: center;
+    text-align: justify; }
 
 .section-watercolor {
   width: 100%;
   min-height: 100vh !important;
   min-height: -webkit-fill-available;
   position: relative;
-  padding-top: 10vh;
+  padding-top: 8vh;
   border: 1px solid black; }
   .section-watercolor .bg {
     position: absolute;
@@ -63,7 +64,7 @@
   min-height: 100vh !important;
   min-height: -webkit-fill-available;
   position: relative;
-  padding-top: 10vh;
+  padding-top: 8vh;
   border: 1px solid black; }
   .section-inc .bg1 {
     position: absolute;
@@ -82,7 +83,7 @@
   min-height: 100vh !important;
   min-height: -webkit-fill-available;
   position: relative;
-  padding-top: 10vh;
+  padding-top: 8vh;
   border: 1px solid black; }
   .section-pencil .bg1 {
     position: absolute;
@@ -98,7 +99,7 @@
   min-height: 100vh !important;
   min-height: -webkit-fill-available;
   position: relative;
-  padding-top: 10vh;
+  padding-top: 8vh;
   border: 1px solid black; }
   .section-sepia .bg1 {
     position: absolute;
@@ -114,7 +115,7 @@
   min-height: 100vh !important;
   min-height: -webkit-fill-available;
   position: relative;
-  padding-top: 10vh;
+  padding-top: 8vh;
   border: 1px solid black; }
   .section-price .bg1 {
     position: absolute;
@@ -131,22 +132,11 @@
 
 .swiper-container {
   width: 100%;
-  height: 100%; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center; }
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px; }
