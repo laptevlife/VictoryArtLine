@@ -21,7 +21,7 @@
   border: 1px solid black;
   background-color: #fff;
   z-index: 1;
-  background-image: url("../images/4.jpg");
+  background-image: url("../images/4 (1).jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 60%;
@@ -33,10 +33,11 @@
   z-index: -1; }
   .section-main .text {
     position: absolute;
-    margin-top: 22vh;
+    margin-top: 25vh;
     left: 5%;
     transition: "all 0.1s ease"; }
     .section-main .text h1 {
+      font-size: 0.8rem;
       color: #ff00d4;
       font-family: Rochester;
       font-style: normal;
@@ -45,22 +46,34 @@
     .section-main .text p {
       margin-top: 10%;
       font-family: 'Sansation Light';
-      font-size: 1.5rem;
-      line-height: 1.8rem;
+      font-size: 0.6rem;
       color: #E3BBDD;
       font-family: Sansation Light;
       font-style: normal;
       transition: "all 0.1s ease"; }
+
+.section-empty {
+  width: 100%;
+  min-height: 100vh !important;
+  min-height: -webkit-fill-available;
+  position: relative;
+  padding-top: 8vh;
+  border: 1px solid black;
+  background-color: #fff;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  opacity: 0; }
 
 .section-text {
   padding: 0 5%;
   text-align: center;
   z-index: 10; }
   .section-text h1 {
-    font-size: calc((220vh - 30rem)/(80 - 30) * (1.5 - 1) + 1rem); }
+    font-size: 0.8rem; }
   .section-text p {
     margin-top: .5rem !important;
-    font-size: calc((120vh - 30rem)/(80 - 30) * (1.5 - 1) + 1rem);
+    font-size: 0.6rem;
     text-align: center;
     text-align: justify; }
 
@@ -72,8 +85,7 @@
   padding-top: 8vh;
   border: 1px solid black;
   background-color: #fff;
-  z-index: 1;
-  margin-top: 100vh; }
+  z-index: 1; }
   .section-watercolor .bg {
     position: absolute;
     top: 0;
