@@ -1,16 +1,15 @@
 @font-face {
-  font-family: 'Rochester';
-  src: url("../fonts/rochester.ttf");
-  /* IE 9 Compatibility Mode */
-  font-weight: 400;
-  font-style: normal; }
-
-@font-face {
   font-family: 'Sansation Light';
   src: url("../fonts/sansation_light.eot");
   /* IE 9 Compatibility Mode */
   src: url("../fonts/sansation_light.eot?#iefix") format("embedded-opentype"), url("../fonts/sansation_light.ttf") format("truetype"), url("../fonts/sansation_light.svg#sansation_light") format("svg");
   /* Chrome < 4, Legacy iOS */ }
+
+@font-face {
+  font-family: 'Great Vibes';
+  src: url("../fonts/greatvibes.ttf");
+  font-weight: 400;
+  font-style: normal; }
 
 .section-main {
   width: 100%;
@@ -18,8 +17,8 @@
   min-height: -webkit-fill-available;
   position: relative;
   padding-top: 8vh;
-  border: 1px solid black;
-  background-color: #fff;
+  border: 1px solid white;
+  background-color: white;
   z-index: 1;
   background-image: url("../images/4 (1).jpg");
   background-repeat: no-repeat;
@@ -37,9 +36,9 @@
     left: 5%;
     transition: "all 0.1s ease"; }
     .section-main .text h1 {
-      font-size: 0.8rem;
-      color: #ff00d4;
-      font-family: Rochester;
+      font-size: 0.7rem;
+      color: #CE43FF;
+      font-family: 'Great Vibes';
       font-style: normal;
       font-weight: normal;
       transition: "all 0.1s ease"; }
@@ -47,7 +46,7 @@
       margin-top: 10%;
       font-family: 'Sansation Light';
       font-size: 0.6rem;
-      color: #E3BBDD;
+      color: #B3A0FF;
       font-family: Sansation Light;
       font-style: normal;
       transition: "all 0.1s ease"; }
@@ -58,8 +57,8 @@
   min-height: -webkit-fill-available;
   position: relative;
   padding-top: 8vh;
-  border: 1px solid black;
-  background-color: #fff;
+  border: 1px solid white;
+  background-color: white;
   z-index: 1;
   position: absolute;
   top: 0;
@@ -78,13 +77,14 @@
     word-wrap: break-word; }
 
 .section-watercolor {
+  box-shadow: 0em -0.2em 0.4rem rgba(0, 0, 0, 0.3);
   width: 100%;
   min-height: 100vh !important;
   min-height: -webkit-fill-available;
   position: relative;
   padding-top: 8vh;
-  border: 1px solid black;
-  background-color: #fff;
+  border: 1px solid white;
+  background-color: white;
   z-index: 1; }
   .section-watercolor .bg {
     position: absolute;
@@ -100,8 +100,8 @@
   min-height: -webkit-fill-available;
   position: relative;
   padding-top: 8vh;
-  border: 1px solid black;
-  background-color: #fff;
+  border: 1px solid white;
+  background-color: white;
   z-index: 1; }
   .section-inc .bg1 {
     position: absolute;
@@ -112,8 +112,9 @@
   .section-inc .bg2 {
     position: absolute;
     z-index: -1;
-    top: 23vh;
-    width: 100%; }
+    top: 40vh;
+    width: 100%;
+    transform: rotate(-60deg); }
 
 .section-pencil {
   width: 100%;
@@ -121,8 +122,8 @@
   min-height: -webkit-fill-available;
   position: relative;
   padding-top: 8vh;
-  border: 1px solid black;
-  background-color: #fff;
+  border: 1px solid white;
+  background-color: white;
   z-index: 1; }
   .section-pencil .bg1 {
     position: absolute;
@@ -139,16 +140,36 @@
   min-height: -webkit-fill-available;
   position: relative;
   padding-top: 8vh;
-  border: 1px solid black;
-  background-color: #fff;
+  border: 1px solid white;
+  background-color: white;
   z-index: 1; }
-  .section-sepia .bg1 {
+  .section-sepia .bg {
     position: absolute;
     width: 100%;
-    top: 25vh;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+    background-image: url("../images/bg/sepia.jpg");
+    background-size: cover; }
+  .section-sepia .swiper-container {
+    height: 60vh; }
+
+.section-acrylic {
+  width: 100%;
+  min-height: 100vh !important;
+  min-height: -webkit-fill-available;
+  position: relative;
+  padding-top: 8vh;
+  border: 1px solid white;
+  background-color: white;
+  z-index: 1; }
+  .section-acrylic .bg1 {
+    position: absolute;
+    width: 100%;
+    top: 20vh;
     right: 0;
     z-index: -1; }
-  .section-sepia .swiper-container {
+  .section-acrylic .swiper-container {
     height: 60vh; }
 
 .section-price {
@@ -157,8 +178,8 @@
   min-height: -webkit-fill-available;
   position: relative;
   padding-top: 8vh;
-  border: 1px solid black;
-  background-color: #fff;
+  border: 1px solid white;
+  background-color: white;
   z-index: 1; }
   .section-price .bg1 {
     position: absolute;
@@ -189,9 +210,12 @@
   right: 3%;
   box-sizing: border-box;
   z-index: 20;
+  margin: 0;
+  padding: 0;
   transition: all 0.8s ease; }
   .burger div {
-    z-index: 20; }
+    z-index: 20;
+    line-height: 1px; }
   .burger div:nth-child(1) {
     position: absolute;
     top: 5px;
@@ -203,9 +227,10 @@
     transition-delay: 0.5s; }
   .burger div:nth-child(2) {
     position: absolute;
-    top: 15px;
+    top: 17px;
     width: 100%;
     height: 2px;
+    line-height: 1px;
     background-color: white;
     transition: all 0.5s ease;
     border-radius: 10px;

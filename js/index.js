@@ -31,7 +31,7 @@ const openNav = () => {
         .fromTo(li[3], .6, { opacity: 0, x: "10vh" }, { opacity: 1, x: "0", ease: Power2.easeInOut }, '-=.5')
         .fromTo(li[4], .6, { opacity: 0, x: "10vh" }, { opacity: 1, x: "0", ease: Power2.easeInOut }, '-=.5')
         .fromTo(li[5], .6, { opacity: 0, x: "10vh" }, { opacity: 1, x: "0", ease: Power2.easeInOut }, '-=.5')
-    // .fromTo(li[6], .6, { opacity: 0, x: "10vh" }, { opacity: 1, x: "0", ease: Power2.easeInOut }, '-=.5')
+    .fromTo(li[6], .6, { opacity: 0, x: "10vh" }, { opacity: 1, x: "0", ease: Power2.easeInOut }, '-=.5')
     // .fromTo(li[7], .6, { opacity: 0, x: "10vh" }, { opacity: 1, x: "0", ease: Power2.easeInOut }, '-=.5')
     return menustatus = !menustatus
     // .fromTo(menu, 1.2, {  opacity: 0, x: "0",   }, { opacity: 1, x: "0", ease: Power2.easeInOut })
@@ -41,8 +41,8 @@ const closeNav = () => {
 
     tl
         // .fromTo(li[7], .6, { opacity: 1, x: "0" }, { opacity: 0, x: "10vh", ease: Power2.easeInOut }, '-=.5')
-        // .fromTo(li[6], .6, { opacity: 1, x: "0" }, { opacity: 0, x: "10vh", ease: Power2.easeInOut }, '-=.5')
-        .fromTo(li[5], .6, { opacity: 1, x: "0" }, { opacity: 0, x: "10vh", ease: Power2.easeInOut })
+        .fromTo(li[6], .6, { opacity: 1, x: "0" }, { opacity: 0, x: "10vh", ease: Power2.easeInOut })
+        .fromTo(li[5], .6, { opacity: 1, x: "0" }, { opacity: 0, x: "10vh", ease: Power2.easeInOut },  '-=.5')
         .fromTo(li[4], .6, { opacity: 1, x: "0" }, { opacity: 0, x: "10vh", ease: Power2.easeInOut }, '-=.5')
         .fromTo(li[3], .6, { opacity: 1, x: "0" }, { opacity: 0, x: "10vh", ease: Power2.easeInOut }, '-=.5')
         .fromTo(li[2], .6, { opacity: 1, x: "0" }, { opacity: 0, x: "10vh", ease: Power2.easeInOut }, '-=.5')
@@ -131,14 +131,14 @@ const pencilSection = document.querySelector('.section-pencil');
 const sepiaSection = document.querySelector('.section-sepia');
 const priceSection = document.querySelector('.section-price');
 
-const scrollTo = ()=>{
+// const scrollTo = ()=>{
 
-    pencilSection.scrollIntoView({behavior: "smooth"}); // Прокрутка до верхней границы
-    // watercolorSection.scrollIntoView(false);
-    console.log('scrolltoo');
+//     pencilSection.scrollIntoView({behavior: "smooth"}); // Прокрутка до верхней границы
+//     // watercolorSection.scrollIntoView(false);
+//     console.log('scrolltoo');
     
     
-}
+// }
 
 // emptySection.addEventListener('click', ()=> scrollTo() )
 

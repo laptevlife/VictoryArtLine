@@ -19,11 +19,16 @@
         // border: 1px solid black;
         // position: relative;
         z-index: 20;
+        margin : 0;
+        padding: 0;
         transition: all 0.8s ease;
 
         // margin-right: 20px;
         div{
             z-index: 20;
+            // border: none;
+            line-height: 1px;
+            // overflow: hidden;
         }
         div:nth-child(1) {
             position: absolute;
@@ -36,11 +41,24 @@
             transition-delay:    $delay;
         }
 
+        // div::after {
+        //     content: '';
+        //     position: absolute;
+        //     top: 12px;
+        //     width: 100%;
+        //     height: 2px;
+        //     line-height: 1px;
+        //     background-color: $whitecolor;
+        //     transition: all  $transition ease;
+        //     border-radius: 10px;
+        //     transition-delay:    $delay;
+        // }
         div:nth-child(2) {
             position: absolute;
-            top: 15px;
+            top: 17px;
             width: 100%;
             height: 2px;
+            line-height: 1px;
             background-color: $whitecolor;
             transition: all  $transition ease;
             border-radius: 10px;
@@ -61,6 +79,12 @@
             background-color: $blackcolor;
             transition-delay:    $delay;
         }
+        // div:nth-child(2) {
+        //     top: 10px;
+        //     transform: rotate(-45deg);
+        //     background-color: $blackcolor;
+        //     transition-delay:    $delay;
+        // }
     }
     .burger-black {
         div:nth-child(1) {
