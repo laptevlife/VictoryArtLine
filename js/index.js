@@ -107,6 +107,24 @@ window.addEventListener('scroll', () => {
 
 
 
+// var swiper = new Swiper('.swiper-container', {
+//     effect: 'coverflow',
+//     grabCursor: true,
+//     centeredSlides: true,
+//     slidesPerView: 'auto',
+//     coverflowEffect: {
+//       rotate: 50,
+//       stretch: 0,
+//       depth: 100,
+//       modifier: 1,
+//       slideShadows: true,
+//     },
+//     pagination: {
+//       el: '.swiper-pagination',
+//     },
+//   });
+
+
 var swiper = new Swiper('.swiper-container', {
     effect: 'coverflow',
     grabCursor: true,
@@ -124,6 +142,7 @@ var swiper = new Swiper('.swiper-container', {
     },
   });
 
+  
 const emptySection = document.querySelector('.section-empty');
 const watercolorSection = document.querySelector('.section-watercolor');
 const incSection = document.querySelector('.section-inc');
