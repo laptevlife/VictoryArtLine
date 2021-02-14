@@ -20,7 +20,7 @@ $mainTransition : 'all 0.1s ease';
 .section-main {
     @include section;
     // background-color: green;
-    background-image: url('../images/4 (1).jpg');
+    background-image: url('../images/4 (1)small.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 60%;
@@ -139,7 +139,7 @@ $mainTransition : 'all 0.1s ease';
         position: absolute;
         z-index: -1;
         // top: 27vh;
-        top : 40vh;
+        bottom : 10vh;
         width: 100%;
         transform: rotate(-60deg);
         // border: 1px solid red;

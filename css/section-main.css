@@ -7,7 +7,7 @@
   border: 1px solid white;
   background-color: white;
   z-index: 1;
-  background-image: url("../images/4 (1).jpg");
+  background-image: url("../images/4 (1)small.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 60%;
@@ -99,7 +99,7 @@
   .section-inc .bg2 {
     position: absolute;
     z-index: -1;
-    top: 40vh;
+    bottom: 10vh;
     width: 100%;
     transform: rotate(-60deg); }
 
