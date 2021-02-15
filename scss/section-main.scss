@@ -3,6 +3,29 @@ $blackcolor: black;
 
 $mainTransition : 'all 0.1s ease';
 
+.loader{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    background-color: #fff;
+    .loader-text {
+        position: fixed;
+        margin-top: 33vh;
+        left: 5%;
+        h1 {
+            font-size: 0.7rem;
+            color:#CE43FF;    
+            font-family: 'Great Vibes';
+            font-style: normal;
+            font-weight: normal;
+            transition: $mainTransition;
+            opacity : 0;
+            // z-index: 1120 ;
+        }
+    }
+}
+
 @mixin section {
     width: 100%;
     min-height: 100vh !important;
@@ -11,7 +34,7 @@ $mainTransition : 'all 0.1s ease';
     // height: auto;
     position: relative;
     padding-top: 8vh;
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     // border: none;
     background-color: white;
     z-index: 1;
@@ -34,11 +57,12 @@ $mainTransition : 'all 0.1s ease';
 
 
     .text {
-        position: absolute;
+        position: fixed;
        
         margin-top: 25vh;
         left: 5%;
-        transition: $mainTransition;
+        // transition: $mainTransition;
+        // z-index: 125 ;
 
         h1 {
             // font-size: calc((250vw - 30rem)/(80 - 30) * (1.5 - 1) + 1rem);
@@ -51,6 +75,7 @@ $mainTransition : 'all 0.1s ease';
             font-style: normal;
             font-weight: normal;
             transition: $mainTransition;
+            // z-index: 1120 ;
         }
 
         p {

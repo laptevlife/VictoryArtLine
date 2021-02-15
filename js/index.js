@@ -1,9 +1,9 @@
 const burger = document.querySelector('.burger');
 const menu = document.querySelector(".menu");
+const loader = document.querySelector(".loader");
 const label = document.querySelector(".label");
 const li = document.querySelectorAll("li");
 const texts = document.querySelectorAll(".section-text");
-
 
 
 
@@ -61,23 +61,47 @@ const closeNav = () => {
 }
 
 
+
 const body = document.querySelector("body");
 const sectionMain = document.querySelector(".section-main");
 const mainH1 = document.querySelector('.text-main h1');
 const mainP = document.querySelector('.text-main p');
 const rect = body.getBoundingClientRect();
 
+// const loaderText = document.querySelector(".loader-text h1").textContent;
+const loaderText = document.querySelector(".loader-text h1");
+// const loaderText = document.querySelector(".loader-text h1");
+// console.log(typeof(Object.entries(loaderText)[0]));
+// console.log(loaderText);
+
+// const entries = Object.entries(loaderText)
+// console.log(entries[0][1]);
+// console.log(typeof(entries[0][1]));
+
+// console.log(Object.entries(loaderText)[0]);
+
+
+const preview = ()=>{
+    tl
+    // .fromTo(entries[0][1], .6, { opacity: 0, x: "10vh" }, { opacity: 1, x: "0", ease: Power2.easeInOut })
+    // .fromTo(entries[0][1], .6, { opacity: 0, x: "10vh" }, { opacity: 1, x: "0", ease: Power2.easeInOut }, '-=0.5')
+    // .fromTo(loaderText, 2, {color: 'black',  }, { color : '#CE43FF',  ease: Power2.easeInOut })
+    // .fromTo(loaderText, 0.1, {display: 'none'}, {  display: 'block',   ease: Power2.easeInOut })
+    .fromTo(loaderText, 2, {opacity: 0, y: "-10vh", fontSize: "1.4rem",  }, {  opacity: 1, y: "-10vh", fontSize: "1.4rem",  ease: Power2.easeInOut })
+    .fromTo(loaderText, 2, { y: "-10vh", fontSize: "1.4rem",  }, {  y: "0", fontSize: "0.7rem",  ease: Power2.easeInOut })
+    // .fromTo(loaderText[1], 1, {color: 'black',  }, { color : 'red',  ease: Power2.easeInOut },  '-=.5')
+    // .fromTo(loaderText[2], 1, {color: 'black',  }, { color : 'red',  ease: Power2.easeInOut },  '-=.5')
+    // .fromTo(loaderText[3], 1, {color: 'black',  }, { color : 'red',  ease: Power2.easeInOut },  '-=.5')
+    .fromTo(loader, 1.5, {opacity: 1, display: "block", }, {opacity: 0, display: "none", ease: Power2.easeInOut }, '-=0.1')
+}
+// setTimeout( ()=> preview(), 100) 
+preview()
 
 window.addEventListener('scroll', () => {
 
     const offset = Math.round(window.pageYOffset);
-    // console.log('rect',  Math.abs(rect.y));
-    // console.log('pageYOffset',  window.pageYOffset);    
-
-
     if (window.pageYOffset > sectionMain.offsetHeight -20) {
         burger.classList.add('burger-black')
-
     } else {
         burger.classList.remove('burger-black')
 
@@ -92,37 +116,7 @@ window.addEventListener('scroll', () => {
     }
 
 
-
-    //     // sectionMain.style.backgroundPositionY = offset * 0.2 + 'px';
-        // mainH1.style.marginTop = offset / 1.7 + 'px';
-    //     // mainH1.style.marginLeft  =offset / 7 + 'px';
-    //     // mainH1.style.opacity = 1 + offset * (-0.001);
-        // mainP.style.opacity = 1 + offset * (-0.003);
-
-        // log
-    //     // mainH1.setAttribute("style", "margin-top: " + offset / 1.7 + 'px' );
-
-
 })
-
-
-
-// var swiper = new Swiper('.swiper-container', {
-//     effect: 'coverflow',
-//     grabCursor: true,
-//     centeredSlides: true,
-//     slidesPerView: 'auto',
-//     coverflowEffect: {
-//       rotate: 50,
-//       stretch: 0,
-//       depth: 100,
-//       modifier: 1,
-//       slideShadows: true,
-//     },
-//     pagination: {
-//       el: '.swiper-pagination',
-//     },
-//   });
 
 
 var swiper = new Swiper('.swiper-container', {
