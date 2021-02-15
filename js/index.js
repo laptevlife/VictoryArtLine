@@ -95,7 +95,7 @@ const preview = ()=>{
     .fromTo(loader, 1.5, {opacity: 1, display: "block", }, {opacity: 0, display: "none", ease: Power2.easeInOut }, '-=0.8')
 }
 setTimeout( ()=> preview(), 1500) 
-preview()
+// preview()
 
 window.addEventListener('scroll', () => {
 
