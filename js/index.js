@@ -92,9 +92,9 @@ const preview = ()=>{
     // .fromTo(loaderText[1], 1, {color: 'black',  }, { color : 'red',  ease: Power2.easeInOut },  '-=.5')
     // .fromTo(loaderText[2], 1, {color: 'black',  }, { color : 'red',  ease: Power2.easeInOut },  '-=.5')
     // .fromTo(loaderText[3], 1, {color: 'black',  }, { color : 'red',  ease: Power2.easeInOut },  '-=.5')
-    .fromTo(loader, 1.5, {opacity: 1, display: "block", }, {opacity: 0, display: "none", ease: Power2.easeInOut }, '-=0.1')
+    .fromTo(loader, 1.5, {opacity: 1, display: "block", }, {opacity: 0, display: "none", ease: Power2.easeInOut }, '-=0.8')
 }
-// setTimeout( ()=> preview(), 100) 
+setTimeout( ()=> preview(), 1500) 
 preview()
 
 window.addEventListener('scroll', () => {
