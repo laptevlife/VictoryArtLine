@@ -23,7 +23,7 @@
   min-height: -webkit-fill-available;
   position: relative;
   padding-top: 8vh;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
   background-color: white;
   z-index: 1;
   background-image: url("../images/4 (1).jpg");
@@ -63,7 +63,7 @@
   min-height: -webkit-fill-available;
   position: relative;
   padding-top: 8vh;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
   background-color: white;
   z-index: 1;
   position: absolute;
@@ -88,7 +88,7 @@
   min-height: -webkit-fill-available;
   position: relative;
   padding-top: 8vh;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
   background-color: white;
   z-index: 1; }
   .section-watercolor .bg {
@@ -105,22 +105,15 @@
   min-height: -webkit-fill-available;
   position: relative;
   padding-top: 8vh;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
   background-color: white;
   z-index: 1; }
-  .section-inc .bg1 {
-    position: absolute;
-    width: 30%;
-    top: 10vh;
-    right: 0;
-    z-index: -1; }
   .section-inc .bg2 {
     position: absolute;
     z-index: -1;
-    bottom: 10vh;
-    left: -10vw;
-    width: 100%;
-    transform: rotate(-60deg); }
+    bottom: 0vh;
+    right: 0;
+    width: 40% !important; }
 
 .section-pencil {
   width: 100%;
@@ -128,14 +121,15 @@
   min-height: -webkit-fill-available;
   position: relative;
   padding-top: 8vh;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
   background-color: white;
   z-index: 1; }
   .section-pencil .bg1 {
     position: absolute;
-    top: 25%;
-    height: 70%;
-    right: 0;
+    bottom: 0%;
+    height: 30%;
+    width: 80%;
+    left: 0%;
     z-index: -1; }
   .section-pencil .swiper-container {
     margin-top: 10vh; }
@@ -146,15 +140,16 @@
   min-height: -webkit-fill-available;
   position: relative;
   padding-top: 8vh;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
   background-color: white;
   z-index: 1; }
   .section-sepia .bg {
     position: absolute;
-    width: 100%;
+    width: 50%;
     right: 0;
-    height: 100%;
+    height: 50%;
     z-index: -1;
+    bottom: 0;
     background-image: url("../images/bg/sepia.jpg");
     background-size: cover; }
   .section-sepia .swiper-container {
@@ -166,15 +161,17 @@
   min-height: -webkit-fill-available;
   position: relative;
   padding-top: 8vh;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
   background-color: white;
   z-index: 1; }
   .section-acrylic .bg1 {
     position: absolute;
-    width: 100%;
-    top: 20vh;
-    right: 0;
-    z-index: -1; }
+    width: 70%;
+    height: 200px;
+    left: 20%;
+    top: 30vh;
+    z-index: -1;
+    transform: rotate(-90deg); }
   .section-acrylic .swiper-container {
     height: 60vh; }
 
@@ -184,7 +181,7 @@
   min-height: -webkit-fill-available;
   position: relative;
   padding-top: 8vh;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
   background-color: white;
   z-index: 1; }
   .section-price .bg1 {

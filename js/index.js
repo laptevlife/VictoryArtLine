@@ -99,7 +99,7 @@ const width = ()=>{
 }
 
 
-width()
+// width()
 
 // window.addEventListener('resize', ()=> width() )
 
@@ -136,7 +136,7 @@ var swiper = new Swiper('.swiper-container', {
     centeredSlides: true,
     slidesPerView: 'auto',
     coverflowEffect: {
-      rotate: 50,
+      rotate: 90,
       stretch: 0,
       depth: 100,
       modifier: 1,
@@ -144,6 +144,7 @@ var swiper = new Swiper('.swiper-container', {
     },
     pagination: {
       el: '.swiper-pagination',
+    
     },
     navigation: {
         nextEl: '.swiper-button-next',

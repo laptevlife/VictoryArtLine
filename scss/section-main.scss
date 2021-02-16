@@ -36,7 +36,7 @@ $mainTransition : 'all 0.1s ease';
     // height: auto;
     position: relative;
     padding-top: 8vh;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
     // border: none;
     background-color: white;
     z-index: 1;
@@ -165,24 +165,26 @@ $mainTransition : 'all 0.1s ease';
         // background-color: red;
     }
 
-    .bg1 {
-        position: absolute;
+    // .bg1 {
+    //     position: absolute;
 
-        width: 30%;
-        top: 10vh;
-        right: 0;
-        z-index: -1;
-    }
+    //     width: 25%;
+    //     top: 10vh;
+    //     right: 0;
+    //     z-index: -1;
+    // }
 
     .bg2 {
         position: absolute;
         z-index: -1;
         // top: 27vh;
-        bottom: 10vh;
+        bottom: 0vh;
+        right: 0;
+
         // bottom : 0;
-        left: -10vw;
-        width: 100%;
-        transform: rotate(-60deg);
+        // left: -10vw;
+        width: 40% !important;
+        // transform: rotate(-60deg);
         // border: 1px solid red;
     }
 }
@@ -195,10 +197,11 @@ $mainTransition : 'all 0.1s ease';
         position: absolute;
 
         // width: 80%;
-        top: 25%;
-        height: 70%;
+        bottom: 0%;
+        height: 30%;
+        width: 80%;
         // margin-top: -40vh;
-        right: 0;
+        left: 0%;
         z-index: -1;
     }
 
@@ -215,11 +218,12 @@ $mainTransition : 'all 0.1s ease';
     .bg {
         position: absolute;
 
-        width: 100%;
+        width: 50%;
         // top: 25vh;
         right: 0;
-        height: 100%;
+        height: 50%;
         z-index: -1;
+        bottom: 0;
 
         // transform: rotate(-90deg);
         // top:40vh;
@@ -228,7 +232,7 @@ $mainTransition : 'all 0.1s ease';
         // border: 1px solid red;
         // background-position: 50% 0;
         background-size: cover;
-
+        // transform: rotate3d(1, 2, -1, 192deg);
     }
 
     .swiper-container {
@@ -245,11 +249,13 @@ $mainTransition : 'all 0.1s ease';
     .bg1 {
         position: absolute;
 
-        width: 100%;
-        top: 20vh;
-        right: 0;
+        width: 70%;
+        height: 200px;
+        left: 20%;
+        top: 30vh;
+        // right: 0;
         z-index: -1;
-        // transform: rotate(-60deg);
+        transform: rotate(-90deg) ;
         // top:40vh;
         // height: 80vh;
         // border: 1px solid red;

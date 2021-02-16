@@ -8,7 +8,8 @@
   z-index: 20;
   margin: 0;
   padding: 0;
-  transition: all 0.8s ease; }
+  transition: all 0.8s ease;
+  cursor: pointer; }
   .burger div {
     z-index: 20;
     line-height: 1px; }
