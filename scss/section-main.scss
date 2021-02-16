@@ -133,6 +133,23 @@ $mainTransition : 'all 0.1s ease';
         // letter-spacing: 2px;
         // text-align: justify;
     }
+    .btn{
+        width: 80%;
+        margin: auto;
+        padding: 5px 5px;
+        // height: 20%;
+        border-radius: 15px;
+        background-color: rgba(4, 124, 255, 0.5);
+        color : white;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+
+    }
+    .btn:hover{
+        background-color: rgba(4, 124, 255, 0.8);
+        transition: all 0.5s ease;
+    }
 }
 
 .section-watercolor {
@@ -297,6 +314,7 @@ $mainTransition : 'all 0.1s ease';
     // background-color: red;
     margin-bottom: 50px;
     height: 55vh;
+   
 
 }
 
@@ -306,6 +324,10 @@ $mainTransition : 'all 0.1s ease';
     // background-size: cover;
     width: auto !important;
     height: 100%;
+    margin: auto;
+    // background-color: red;
+    display: flex;justify-content: center;
+  
 
     img {
         object-fit: cover;

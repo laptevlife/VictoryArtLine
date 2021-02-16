@@ -4,7 +4,22 @@ const loader = document.querySelector(".loader");
 const label = document.querySelector(".label");
 const li = document.querySelectorAll("li");
 const texts = document.querySelectorAll(".section-text");
+const orderBtns = document.querySelectorAll(".btn");
 
+const body = document.querySelector("body");
+const sectionMain = document.querySelector(".section-main");
+const mainH1 = document.querySelector('.text-main h1');
+const mainP = document.querySelector('.text-main p');
+const rect = body.getBoundingClientRect();
+const loaderText = document.querySelector(".loader-text h1");
+
+
+const emptySection = document.querySelector('.section-empty');
+const watercolorSection = document.querySelector('.section-watercolor');
+const incSection = document.querySelector('.section-inc');
+const pencilSection = document.querySelector('.section-pencil');
+const sepiaSection = document.querySelector('.section-sepia');
+const priceSection = document.querySelector('.section-price');
 
 
 let menustatus = false;
@@ -62,14 +77,6 @@ const closeNav = () => {
 
 
 
-const body = document.querySelector("body");
-const sectionMain = document.querySelector(".section-main");
-const mainH1 = document.querySelector('.text-main h1');
-const mainP = document.querySelector('.text-main p');
-const rect = body.getBoundingClientRect();
-
-// const loaderText = document.querySelector(".loader-text h1").textContent;
-const loaderText = document.querySelector(".loader-text h1");
 
 
 
@@ -99,7 +106,7 @@ const width = ()=>{
 }
 
 
-width()
+// width()
 
 // window.addEventListener('resize', ()=> width() )
 
@@ -125,6 +132,15 @@ window.addEventListener('scroll', () => {
 })
 
 // console.log(body.clientWidth);
+
+// console.log(orderBtn);
+
+orderBtns.forEach( btn =>{
+    btn.addEventListener('click', ()=>{
+        priceSection.scrollIntoView({behavior: "smooth"}); 
+    })
+})
+
 
 
 
@@ -251,12 +267,7 @@ var swiper5 = new Swiper('.sw5', {
     // },
 //   });
   
-const emptySection = document.querySelector('.section-empty');
-const watercolorSection = document.querySelector('.section-watercolor');
-const incSection = document.querySelector('.section-inc');
-const pencilSection = document.querySelector('.section-pencil');
-const sepiaSection = document.querySelector('.section-sepia');
-const priceSection = document.querySelector('.section-price');
+
 
 // const scrollTo = ()=>{
 
