@@ -110,9 +110,9 @@ const width = ()=>{
     else if(body.clientWidth > 800){
         previeDesktop()
     }
-    else if(body.clientWidth < 800){
-        previewMobil()
-    }
+    // else if(body.clientWidth < 800){
+    //     previewMobil()
+    // }
   
     
 }
