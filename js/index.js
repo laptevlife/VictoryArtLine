@@ -70,32 +70,38 @@ const rect = body.getBoundingClientRect();
 
 // const loaderText = document.querySelector(".loader-text h1").textContent;
 const loaderText = document.querySelector(".loader-text h1");
-// const loaderText = document.querySelector(".loader-text h1");
-// console.log(typeof(Object.entries(loaderText)[0]));
-// console.log(loaderText);
-
-// const entries = Object.entries(loaderText)
-// console.log(entries[0][1]);
-// console.log(typeof(entries[0][1]));
-
-// console.log(Object.entries(loaderText)[0]);
 
 
-const preview = ()=>{
+
+const previewMobil = ()=>{
     tl
-    // .fromTo(entries[0][1], .6, { opacity: 0, x: "10vh" }, { opacity: 1, x: "0", ease: Power2.easeInOut })
-    // .fromTo(entries[0][1], .6, { opacity: 0, x: "10vh" }, { opacity: 1, x: "0", ease: Power2.easeInOut }, '-=0.5')
-    // .fromTo(loaderText, 2, {color: 'black',  }, { color : '#CE43FF',  ease: Power2.easeInOut })
-    // .fromTo(loaderText, 0.1, {display: 'none'}, {  display: 'block',   ease: Power2.easeInOut })
     .fromTo(loaderText, 2, {opacity: 0, y: "-10vh", fontSize: "1.4rem",  }, {  opacity: 1, y: "-10vh", fontSize: "1.4rem",  ease: Power2.easeInOut })
     .fromTo(loaderText, 2, { y: "-10vh", fontSize: "1.4rem",  }, {  y: "0", fontSize: "0.7rem",  ease: Power2.easeInOut })
-    // .fromTo(loaderText[1], 1, {color: 'black',  }, { color : 'red',  ease: Power2.easeInOut },  '-=.5')
-    // .fromTo(loaderText[2], 1, {color: 'black',  }, { color : 'red',  ease: Power2.easeInOut },  '-=.5')
-    // .fromTo(loaderText[3], 1, {color: 'black',  }, { color : 'red',  ease: Power2.easeInOut },  '-=.5')
     .fromTo(loader, 1.5, {opacity: 1, display: "block", }, {opacity: 0, display: "none", ease: Power2.easeInOut }, '-=0.8')
 }
-setTimeout( ()=> preview(), 1500) 
-// preview()
+const previeDesktop = ()=>{
+    tl
+    .fromTo(loaderText, 2, {opacity: 0, y: "10vh", fontSize: "3.4rem",  }, {  opacity: 1, y: "10vh", fontSize: "3.4rem",  ease: Power2.easeInOut })
+    .fromTo(loaderText, 2, { y: "10vh", fontSize: "3.4rem",  }, {  y: "-8vh", fontSize: "2.4rem",  ease: Power2.easeInOut })
+    .fromTo(loader, 1.5, {opacity: 1, display: "block", }, {opacity: 0, display: "none", ease: Power2.easeInOut }, '-=0.8')
+}
+// setTimeout( ()=> preview(), 1500) 
+
+const width = ()=>{
+    // console.log(body.clientWidth);
+    if(body.clientWidth > 800){
+        previeDesktop()
+    }
+    if(body.clientWidth < 800){
+        previewMobil()
+    }
+    
+}
+
+
+width()
+
+// window.addEventListener('resize', ()=> width() )
 
 window.addEventListener('scroll', () => {
 
@@ -118,6 +124,11 @@ window.addEventListener('scroll', () => {
 
 })
 
+// console.log(body.clientWidth);
+
+
+
+
 
 var swiper = new Swiper('.swiper-container', {
     effect: 'coverflow',
@@ -134,8 +145,26 @@ var swiper = new Swiper('.swiper-container', {
     pagination: {
       el: '.swiper-pagination',
     },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
   });
 
+
+// var swiper = new Swiper('.swiper-container', {
+//     slidesPerView: 1,
+//     spaceBetween: 30,
+//     loop: true,
+//     pagination: {
+//       el: '.swiper-pagination',
+//       clickable: true,
+//     },
+    // navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
+//   });
   
 const emptySection = document.querySelector('.section-empty');
 const watercolorSection = document.querySelector('.section-watercolor');

@@ -75,3 +75,7 @@
         text-decoration: none;
         text-transform: uppercase;
         color: black; }
+
+@media all and (min-width: 1050px) {
+  .burger {
+    top: 5vh; } }

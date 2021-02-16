@@ -1,106 +1,110 @@
+$delay: .5s;
+$transition: .5s;
+$whitecolor: white;
+$blackcolor: black;
 
-    $delay: .5s;
-    $transition: .5s;
-    $whitecolor: white;
-    $blackcolor: black;
-    
 
-    .burger{
-        width: 40px;
-        height: 20px;
-        position: fixed;
-        top: 3vh;
-        right: 3%;
-        box-sizing: border-box;
-        // background-color: red;
-  
-        // width: 40px;
-        // height: 25px;
-        // border: 1px solid black;
-        // position: relative;
+.burger {
+    width: 40px;
+    height: 20px;
+    position: fixed;
+    top: 3vh;
+    right: 3%;
+    box-sizing: border-box;
+    // background-color: red;
+
+    // width: 40px;
+    // height: 25px;
+    // border: 1px solid black;
+    // position: relative;
+    z-index: 20;
+    margin: 0;
+    padding: 0;
+    transition: all 0.8s ease;
+
+    // margin-right: 20px;
+    div {
         z-index: 20;
-        margin : 0;
-        padding: 0;
-        transition: all 0.8s ease;
-
-        // margin-right: 20px;
-        div{
-            z-index: 20;
-            // border: none;
-            line-height: 1px;
-            // overflow: hidden;
-        }
-        div:nth-child(1) {
-            position: absolute;
-            top: 5px;
-            width: 100%;
-            height: 2px;
-            background-color: $whitecolor;
-            transition: all  $transition ease;
-            border-radius: 10px;
-            transition-delay:    $delay;
-        }
-
-        // div::after {
-        //     content: '';
-        //     position: absolute;
-        //     top: 12px;
-        //     width: 100%;
-        //     height: 2px;
-        //     line-height: 1px;
-        //     background-color: $whitecolor;
-        //     transition: all  $transition ease;
-        //     border-radius: 10px;
-        //     transition-delay:    $delay;
-        // }
-        div:nth-child(2) {
-            position: absolute;
-            top: 17px;
-            width: 100%;
-            height: 2px;
-            line-height: 1px;
-            background-color: $whitecolor;
-            transition: all  $transition ease;
-            border-radius: 10px;
-            transition-delay:    $delay;
-        }
+        // border: none;
+        line-height: 1px;
+        // overflow: hidden;
     }
-    .burger-active {
-        div:nth-child(1) {
-            top: 10px;
-            transform: rotate(45deg);
-            background-color: $blackcolor;
-            transition-delay:    $delay;
-        }
 
-        div:nth-child(2) {
-            top: 10px;
-            transform: rotate(-45deg);
-            background-color: $blackcolor;
-            transition-delay:    $delay;
-        }
-        // div:nth-child(2) {
-        //     top: 10px;
-        //     transform: rotate(-45deg);
-        //     background-color: $blackcolor;
-        //     transition-delay:    $delay;
-        // }
+    div:nth-child(1) {
+        position: absolute;
+        top: 5px;
+        width: 100%;
+        height: 2px;
+        background-color: $whitecolor;
+        transition: all $transition ease;
+        border-radius: 10px;
+        transition-delay: $delay;
     }
-    .burger-black {
-        div:nth-child(1) {
-            // top: 10px;
-            // transform: rotate(45deg);
-            background-color: $blackcolor;
-            // transition-delay:    0;
-        }
 
-        div:nth-child(2) {
-            // top: 10px;
-            // transform: rotate(-45deg);
-            background-color: $blackcolor;
-            // transition-delay:    0;
-        }
+    // div::after {
+    //     content: '';
+    //     position: absolute;
+    //     top: 12px;
+    //     width: 100%;
+    //     height: 2px;
+    //     line-height: 1px;
+    //     background-color: $whitecolor;
+    //     transition: all  $transition ease;
+    //     border-radius: 10px;
+    //     transition-delay:    $delay;
+    // }
+    div:nth-child(2) {
+        position: absolute;
+        top: 17px;
+        width: 100%;
+        height: 2px;
+        line-height: 1px;
+        background-color: $whitecolor;
+        transition: all $transition ease;
+        border-radius: 10px;
+        transition-delay: $delay;
     }
+}
+
+.burger-active {
+    div:nth-child(1) {
+        top: 10px;
+        transform: rotate(45deg);
+        background-color: $blackcolor;
+        transition-delay: $delay;
+    }
+
+    div:nth-child(2) {
+        top: 10px;
+        transform: rotate(-45deg);
+        background-color: $blackcolor;
+        transition-delay: $delay;
+    }
+
+    // div:nth-child(2) {
+    //     top: 10px;
+    //     transform: rotate(-45deg);
+    //     background-color: $blackcolor;
+    //     transition-delay:    $delay;
+    // }
+}
+
+.burger-black {
+    div:nth-child(1) {
+        // top: 10px;
+        // transform: rotate(45deg);
+        background-color: $blackcolor;
+        // transition-delay:    0;
+    }
+
+    div:nth-child(2) {
+        // top: 10px;
+        // transform: rotate(-45deg);
+        background-color: $blackcolor;
+        // transition-delay:    0;
+    }
+}
+
 .menu {
     position: fixed;
     top: 0;
@@ -142,5 +146,11 @@
 
             // font-weight: 900;
         }
+    }
+}
+
+@media all and (min-width: 1050px) {
+    .burger {
+        top: 5vh;
     }
 }
