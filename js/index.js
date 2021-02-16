@@ -92,16 +92,28 @@ const previeDesktop = ()=>{
     .fromTo(loaderText, 2, { y: "10vh", fontSize: "3.4rem",  }, {  y: "-8vh", fontSize: "2.4rem",  ease: Power2.easeInOut })
     .fromTo(loader, 1.5, {opacity: 1, display: "block", }, {opacity: 0, display: "none", ease: Power2.easeInOut }, '-=0.8')
 }
+const previeTablet = ()=>{
+    tl
+    .fromTo(loaderText, 2, {opacity: 0, y: "20vh", fontSize: "2.4rem",  }, {  opacity: 1, y: "20vh", fontSize: "2.4rem",  ease: Power2.easeInOut })
+    .fromTo(loaderText, 2, { y: "20vh", fontSize: "2.4rem",  }, {  y: "6vh", fontSize: "1.4rem",  ease: Power2.easeInOut })
+    .fromTo(loader, 1.5, {opacity: 1, display: "block", }, {opacity: 0, display: "none", ease: Power2.easeInOut }, '-=0.8')
+}
 // setTimeout( ()=> preview(), 1500) 
 
 const width = ()=>{
     // console.log(body.clientWidth);
-    if(body.clientWidth > 800){
+    if( body.clientWidth > 650 && body.clientWidth < 800){
+        // console.log('hhghgfghf');
+        
+        previeTablet()
+    }
+    else if(body.clientWidth > 800){
         previeDesktop()
     }
-    if(body.clientWidth < 800){
+    else if(body.clientWidth < 800){
         previewMobil()
     }
+  
     
 }
 
