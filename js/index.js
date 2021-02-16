@@ -106,7 +106,7 @@ const width = ()=>{
 }
 
 
-// width()
+width()
 
 // window.addEventListener('resize', ()=> width() )
 

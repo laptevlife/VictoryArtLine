@@ -35,7 +35,7 @@ $mainTransition : 'all 0.1s ease';
 
     // height: auto;
     position: relative;
-    padding-top: 8vh;
+    padding-top: 4vh;
     border: 1px solid white;
     // border: none;
     background-color: white;
@@ -293,11 +293,13 @@ $mainTransition : 'all 0.1s ease';
         position: absolute;
 
         width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
+        height: 100%;      
+        // top: 0;
+        // left: 0;
+        // margin-left: -25%;
         z-index: -1;
     }
+
 
     .text {
         margin-top: 20vh;
@@ -310,7 +312,7 @@ $mainTransition : 'all 0.1s ease';
     width: 100%;
     // padding-top: 50px;
     // padding-bottom: 50px;
-    margin-top: 5vh;
+    margin-top: 3vh;
     // background-color: red;
     margin-bottom: 50px;
     height: 55vh;
