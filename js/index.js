@@ -21,6 +21,49 @@ const pencilSection = document.querySelector('.section-pencil');
 const sepiaSection = document.querySelector('.section-sepia');
 const priceSection = document.querySelector('.section-price');
 
+const materialInputs = document.querySelectorAll('.material input')
+const sizeInputs = document.querySelectorAll('.size input')
+
+
+console.log(materialInputs);
+
+let materialIndex = 0;
+
+const materialChouse = (arr)=>{
+    arr.forEach( (i, index) =>{     
+        
+        i.addEventListener('click', ()=>{            
+            arr.forEach( ( j ) =>{
+                j.checked = false;
+            })
+            i.checked= true;
+            // console.log(index);
+            return materialIndex = index;
+        })
+       
+     
+        
+    })
+}
+materialChouse(materialInputs)
+materialChouse(sizeInputs)
+console.log( 'materialIndex',  materialIndex);
+
+// const x = ()=>{
+//     materialInputs.forEach( i =>{
+//         i.removeAttribute("checked")
+//         console.log('kkkkkk');
+        
+//     })
+// }
+
+
+
+
+
+
+
+
 
 let menustatus = false;
 
@@ -118,9 +161,12 @@ const width = ()=>{
 }
 
 
-width()
+// width()
 
 // window.addEventListener('resize', ()=> width() )
+
+
+
 
 window.addEventListener('scroll', () => {
 
@@ -163,6 +209,7 @@ var swiper1 = new Swiper('.sw1', {
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: 'auto',
+    activeIndex : 4,
     coverflowEffect: {
       rotate: 90,
       stretch: 0,
@@ -265,6 +312,8 @@ var swiper5 = new Swiper('.sw5', {
   });
 
 
+//   console.log(swiper1);
+//   swiper1.activeIndex = 4;
 // var swiper = new Swiper('.swiper-container', {
 //     slidesPerView: 1,
 //     spaceBetween: 30,
