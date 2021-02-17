@@ -16,6 +16,8 @@
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
+
 
 
     <title>Victory Art Line</title>
@@ -43,6 +45,7 @@
             <li class="item"><a onclick={closeNav()} href="#section-sepia">Сепия</a></li>
             <li class="item"><a onclick={closeNav()} href="#section-acrylic">Акрил</a></li>
             <li class="item"><a onclick={closeNav()} href="#section-price">Цены</a></li>
+            <li class="item"><a onclick={closeNav()} href="#section-contacts">Контакты</a></li>
             <!-- <li class="item"><a onclick={closeNav()} href="#section-watercolor">Портрет акварелью</a></li>
             <li class="item"><a onclick={closeNav()} href="#section-inc">Портрет тушью</a></li>
             <li class="item"><a onclick={closeNav()} href="#section-pencil">Портрет карандашом</a></li>
@@ -56,7 +59,8 @@
         <div class="section-main  " id='section-main'>
             <div class="text text-main">
                 <h1>Victory Art Line</h1>
-                <p>Портреты <br> на заказ <br> по фото</p>
+                <p class='mobil'>Портреты <br> на заказ <br> по фото</p>
+                <p class='dt'>Портреты на заказ по фото</p>
             </div>
         </div>
 
@@ -79,18 +83,24 @@
         <div class="section-watercolor section flex" id='section-watercolor'>
             <img class="bg" src="./images/bg/акварель.jpg" alt="">
             <!-- <img class="bg" src="./images/img (1).png" alt=""> -->
-            <div class="text section-text" data-aos="fade-up" data-aos-duration="500">
+            <div class="text section-text" data-aos="fade-up" data-aos-duration="800">
                 <h1>Портрет акварелью</h1>
                 <p>
                     Портрет выполненный в данной технике подойдет тем, кто ценит впечатление легкости и сочности цвета.
                     Исключительной особенностью акварели является богатство оттенков, ощущение воздушности и тонкости
                     цветовых переходов.
                 </p>
-                <div class='btn'>Заказать</div>
+
+                <!-- <div class='btn btn-2'>Заказать</div> -->
+
+
+                <div class="button-item">
+                    <a class=' btn-2 btn' ><span>Заказать</span></a>
+                </div>
             </div>
 
 
-            <div class="swiper-container sw1" data-aos="fade-up" data-aos-duration="500">
+            <div class="swiper-container sw1" data-aos="fade-up" data-aos-duration="800">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img class="swiper-slide" src="./images/watercolor/1.jpg" alt=""></div>
                     <div class="swiper-slide"><img class="swiper-slide" src="./images/watercolor/2.jpg" alt=""></div>
@@ -120,16 +130,19 @@
             <img class="bg2" src="./images/bg/тушь.jpg" alt="">
 
             <!-- <img class="bg2" src="./images/incbg (1).png" alt=""> -->
-            <div class="text section-text" data-aos="fade-up" data-aos-duration="500">
+            <div class="text section-text" data-aos="fade-up" data-aos-duration="800">
                 <h1>Портрет тушью</h1>
                 <p>
                     Портрет исполненный тушью несомненно выберут любители бархатистых переходов тонов одноцветной,
                     оттеночной живописи совмещенной с четкими и энергичными линиями.
                 </p>
-                <div class='btn'>Заказать</div>
+                <!-- <div class='btn'>Заказать</div> -->
+                <div class="button-item">
+                    <a class=' btn-2 btn' ><span>Заказать</span></a>
+                </div>
             </div>
 
-            <div class="swiper-container sw2" data-aos="fade-up" data-aos-duration="500">
+            <div class="swiper-container sw2" data-aos="fade-up" data-aos-duration="800">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img class="swiper-slide" src="./images/inc/1.jpg" alt=""></div>
                     <div class="swiper-slide"><img class="swiper-slide" src="./images/inc/2.jpg" alt=""></div>
@@ -158,17 +171,20 @@
         <div class="section-pencil section flex" id='section-pencil'>
             <img class="bg1" src="./images/bg/карандаш.jpg" alt="">
 
-            <div class="text section-text" data-aos="fade-up" data-aos-duration="500">
+            <div class="text section-text" data-aos="fade-up" data-aos-duration="800">
                 <h1>Портрет карандашом</h1>
                 <p>
                     Данный стиль подойдет тем, кто несмотря на отсутствие цвета, способен оценить все великолепие
                     тонального разнообразия и мягкие, тонкие светотеневые переходы делающие портрет живым, дышащим
                     и фотореалистичным
                 </p>
-                <div class='btn'>Заказать</div>
+                <!-- <div class='btn'>Заказать</div> -->
+                <div class="button-item">
+                    <a class=' btn-2 btn' ><span>Заказать</span></a>
+                </div>
             </div>
 
-            <div class="swiper-container sw3" data-aos="fade-up" data-aos-duration="500">
+            <div class="swiper-container sw3" data-aos="fade-up" data-aos-duration="800">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img class="swiper-slide" src="./images/pencil/1.jpg" alt=""></div>
                     <div class="swiper-slide"><img class="swiper-slide" src="./images/pencil/2.jpg" alt=""></div>
@@ -196,17 +212,20 @@
             <!-- <img class="bg1" src="./images/bg/сепия.jpg" alt=""> -->
             <div class="bg"></div>
 
-            <div class="text section-text" data-aos="fade-up" data-aos-duration="500">
+            <div class="text section-text" data-aos="fade-up" data-aos-duration="800">
                 <h1>Портрет Сепия</h1>
                 <p>
                     Сепия станет прекрасным материалом для любителей реалистичных растушовок, идеально копирующих тона
                     фотографии и ее настроение. Сепия обладает мягким и выразительным каричневым оттенком, который
                     придает портрету особую изысканную игру эмоций
                 </p>
-                <div class='btn'>Заказать</div>
+                <!-- <div class='btn'>Заказать</div> -->
+                <div class="button-item">
+                    <a class=' btn-2 btn' ><span>Заказать</span></a>
+                </div>
             </div>
 
-            <div class="swiper-container sw4" data-aos="fade-up" data-aos-duration="500">
+            <div class="swiper-container sw4" data-aos="fade-up" data-aos-duration="800">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img class="swiper-slide" src="./images/sepia/1.jpg" alt=""></div>
                     <div class="swiper-slide"><img class="swiper-slide" src="./images/sepia/2.jpg" alt=""></div>
@@ -232,17 +251,20 @@
         <div class="section-acrylic section flex" id='section-acrylic'>
             <!-- <img class="bg1" src="./images/bg/акрил.jpg" alt=""> -->
 
-            <div class="text section-text" data-aos="fade-up" data-aos-duration="500">
+            <div class="text section-text" data-aos="fade-up" data-aos-duration="800">
                 <h1>Акриловая краска</h1>
                 <p>
                     Сепия станет прекрасным материалом для любителей реалистичных растушовок, идеально копирующих тона
                     фотографии и ее настроение. Сепия обладает мягким и выразительным каричневым оттенком, который
                     придает портрету особую изысканную игру эмоций
                 </p>
-                <div class='btn'>Заказать</div>
+                <!-- <div class='btn'>Заказать</div> -->
+                <div class="button-item">
+                    <a class=' btn-2 btn' ><span>Заказать</span></a>
+                </div>
             </div>
 
-            <div class="swiper-container sw5" data-aos="fade-up" data-aos-duration="500">
+            <div class="swiper-container sw5" data-aos="fade-up" data-aos-duration="800">
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide"><img class="swiper-slide" src="./images/acrylic/1.jpg" alt=""></div>
@@ -269,80 +291,89 @@
         </div>
 
         <div class="section-price " id='section-price'>
-            <div class="text section-text" data-aos="fade-up" data-aos-duration="500">
-                <h1>Рассчет стоимости</h1>
-                <!-- <p> Выберите материал и размер:</p> -->
-
-            </div>
-            <div class="slider">
-                <div class="slider-wrap">
-                    <!-- <div class="slide"><img src="./images/watercolor/7.jpg" alt=""></div> -->
-                    <!-- <div class="slide"><img src="./images/watercolor/7.jpg" alt=""></div>
-                    <div class="slide"><img src="./images/watercolor/7.jpg" alt=""></div>
-                    <div class="slide"><img src="./images/watercolor/7.jpg" alt=""></div> -->
-                    <div style='background-color: red' class="slide">1</div>
-                    <div style='background-color: pink' class="slide">1</div>
-                    <div style='background-color: yellow' class="slide">1</div>
-                    <div style='background-color: green' class="slide">1</div>
-
-
+            <div class='section-price-first'>
+                <div class="text section-text" data-aos="fade-up" data-aos-duration="800">
+                    <h1 class = 'h1'>Рассчет стоимости</h1>
+                    <!-- <p> Выберите материал и размер:</p> -->
                 </div>
-            </div>
-            <div class="text section-text" data-aos="fade-up" data-aos-duration="500">
-          
-                <p> Выберите материал и размер:</p>
+                <div class="slider" data-aos="fade-up" data-aos-duration="800">
+                    <div class="slider-wrap">
+                        <!-- <div class="slide"><img src="./images/watercolor/7.jpg" alt=""></div> -->
+                        <!-- <div class="slide"><img src="./images/watercolor/7.jpg" alt=""></div>
+                        <div class="slide"><img src="./images/watercolor/7.jpg" alt=""></div>
+                        <div class="slide"><img src="./images/watercolor/7.jpg" alt=""></div> -->
+                        <div class="slide active"><img src="./images/watercolor/7.jpg" alt=""></div>
+                        <div class="slide"><img src="./images/inc/7.jpg" alt=""></div>
+                        <div class="slide"><img src="./images/pencil/2.jpg" alt=""></div>
+                        <div class="slide"><img src="./images/sepia/7.jpg" alt=""></div>
+                        <div class="slide"><img src="./images/acrylic/1.jpg" alt=""></div>
 
-            </div>
 
-            <div class="calculator ">
-
-                <div class="material">
-                    <div>
-                        <input type="checkbox" id="watercolor" name="watercolor" value= '2000' checked>
-                        <label for="watercolor">watercolor</label>
                     </div>
-
-                    <div>
-                        <input type="checkbox" id="inc" name="inc" value= '1800'>
-                        <label for="inc">Inc</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="pencil" name="pencil" value= '1500'>
-                        <label for="pencil">pencil</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="sepia" name="sepia" value= '1700'>
-                        <label for="sepia">Sepia</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="acrylic" name="acrylic" value= '3000'>
-                        <label for="acrylic">Acrylic</label>
-                    </div>
-
                 </div>
 
-                <div class="size">
-                    <div>
-                        <input type="checkbox" id="20x30" name="20x30" checked>
-                        <label for="20x30">20x30</label>
-                    </div>
-
-                    <div>
-                        <input type="checkbox" id="30x40" name="30x40">
-                        <label for="30x40">30x40</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="40x60" name="40x60">
-                        <label for="40x60">40x60</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="60x80" name="60x80">
-                        <label for="60x80">60x80</label>
-                    </div>
-                 
-
-                </div>
             </div>
+
+
+            <div class='section-price-second'>
+                <div class="text section-text" data-aos="fade-up" data-aos-duration="800">
+                    <h1 class = 'h11'>Рассчет стоимости</h1>
+                    <p> Выберите материал и размер:</p>
+                </div>
+
+                <div class="calculator " data-aos="fade-up" data-aos-duration="800">
+
+                    <div class="material">
+                        <div>
+                            <input type="checkbox" id="watercolor" name="watercolor" value='2800' checked>
+                            <label for="watercolor">Акварель</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="inc" name="inc" value='2500'>
+                            <label for="inc">Тушь</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="pencil" name="pencil" value='2000'>
+                            <label for="pencil">Карандаш</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="sepia" name="sepia" value='2200'>
+                            <label for="sepia">Сепия</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="acrylic" name="acrylic" value='3500'>
+                            <label for="acrylic">Акрил</label>
+                        </div>
+
+                    </div>
+
+                    <div class="size">
+                        <div>
+                            <input type="checkbox" id="20x30" name="20x30" value='1'>
+                            <label for="20x30">20x30</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="30x40" name="30x40" value='1.5'>
+                            <label for="30x40">30x40</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="40x60" name="40x60" value='2.2'>
+                            <label for="40x60">40x60</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="60x80" name="60x80" value='3.8'>
+                            <label for="60x80">60x80</label>
+                        </div>
+                        <p>Цена:<span class="price"></span></p>
+
+
+                    </div>
+                </div>
+
+            </div>
+
 
 
 
@@ -352,7 +383,10 @@
         <div class="section-contacts" id='section-contacts'>
             <img class="bg1" src="./images/img (3).png" alt="">
 
-
+            <div class="text section-text" data-aos="fade-up" data-aos-duration="800">
+                <h1>Контакты</h1>
+                <!-- <p> Выберите материал и размер:</p> -->
+            </div>
 
         </div>
     </div>
@@ -366,7 +400,7 @@
         AOS.init();
     </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script> -->
 
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit.min.js"></script>
