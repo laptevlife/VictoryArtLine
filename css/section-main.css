@@ -92,6 +92,11 @@
     cursor: pointer;
     transition: all 0.5s ease;
     box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.5); }
+  .section-text .btn:hover {
+    -webkit-box-shadow: 1px 9px 24px 23px rgba(34, 60, 80, 0.16);
+    -moz-box-shadow: 1px 9px 24px 23px rgba(34, 60, 80, 0.16);
+    box-shadow: 1px 9px 24px 23px rgba(34, 60, 80, 0.16);
+    transition: all 0.5s ease; }
   .section-text .button-parent {
     width: 100%;
     text-align: center; }
@@ -272,9 +277,12 @@
         width: auto;
         height: 5vh;
         margin-top: 7px;
-        font-size: 0.8rem; }
+        font-size: 0.8rem;
+        font-weight: bold; }
         .section-price .calculator .size p span {
-          font-size: 0.8rem; }
+          font-size: 0.8rem;
+          font-weight: bold;
+          color: #221212; }
 
 @media all and (min-width: 800px) {
   .section-price {
@@ -362,9 +370,9 @@
       margin-top: -20vh;
       width: 45%; }
       .section.flex .text h1 {
-        font-size: calc( (60vw - 30rem)/(80 - 30) * (1.5 - 1) + 1rem); }
+        font-size: calc((60vw - 30rem)/(80 - 30) * (1.5 - 1) + 1rem); }
       .section.flex .text p {
-        font-size: calc( (30vw - 30rem)/(50 - 30) * (1.5 - 1) + 1rem);
+        font-size: calc((30vw - 30rem)/(50 - 30) * (1.5 - 1) + 1rem);
         font-weight: 100; }
     .section.flex .swiper-container {
       width: 50%;
