@@ -81,6 +81,19 @@
     font-size: 0.5rem;
     text-align: center;
     word-wrap: break-word; }
+  .section-text .btn {
+    width: 70%;
+    margin: auto;
+    padding: 5px 5px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease; }
+  .section-text .btn:hover {
+    background-color: rgba(4, 124, 255, 0.8);
+    transition: all 0.5s ease; }
   .section-text .button-parent {
     width: 100%;
     text-align: center; }
@@ -97,21 +110,23 @@
     transition: all 300ms ease;
     box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    border-radius: 2px; }
+    border-radius: 20px; }
     .section-text .btn-2:before {
       position: absolute;
       content: '';
       width: 0%;
-      height: 100%;
+      height: 90%;
       background: black;
       top: 0;
       left: auto;
       right: 0;
       z-index: -1;
-      transition: all 300ms ease; }
+      transition: all 300ms ease;
+      border-radius: 20px; }
     .section-text .btn-2:hover {
       color: white;
-      box-shadow: none; }
+      box-shadow: none;
+      border-radius: 20px; }
       .section-text .btn-2:hover:before {
         position: absolute;
         content: '';
@@ -121,7 +136,8 @@
         top: 0;
         left: 0;
         right: 0;
-        z-index: -1; }
+        z-index: -1;
+        border-radius: 20px; }
 
 .section-watercolor {
   width: 100%;
@@ -139,6 +155,10 @@
     width: 100%;
     object-fit: contain;
     z-index: -1; }
+  @media all and (min-width: 800px) {
+    .section-watercolor .bg {
+      width: 100% !important;
+      height: 100vh; } }
 
 .section-inc {
   width: 100%;
@@ -347,8 +367,8 @@
   .text p {
     font-size: 0.5rem; }
   .section-main .text-main {
-    top: 10vh;
-    left: 15%; }
+    top: -10vh;
+    left: 10%; }
     .section-main .text-main h1 {
       font-size: 2.4rem !important; }
     .section-main .text-main p.mobil {
@@ -360,7 +380,7 @@
       margin-top: 0%;
       margin-left: 5%; }
   .section-main {
-    background-image: url("../images/bg/mainbig.jpg"); }
+    background-image: url("../images/bg/mainbig2.jpg"); }
   .section.flex {
     display: flex;
     justify-content: space-evenly;
@@ -368,7 +388,13 @@
     .section.flex img {
       width: 50%; }
     .section.flex .text {
-      width: 40%; }
+      margin-top: -20vh;
+      width: 48%; }
+      .section.flex .text h1 {
+        font-size: calc( (60vw - 30rem)/(80 - 30) * (1.5 - 1) + 1rem); }
+      .section.flex .text p {
+        font-size: calc( (30vw - 30rem)/(80 - 30) * (1.5 - 1) + 1rem);
+        font-weight: 100; }
     .section.flex .swiper-container {
       width: 50%;
       height: 80vh; }
