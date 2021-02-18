@@ -95,7 +95,7 @@ const openNav = () => {
   burger.classList.toggle('burger-active')
   tl
     .fromTo(menu, 0, { x: "100vw", }, { x: "0", ease: Power2.easeInOut })
-    .fromTo(menu, 1, { opacity: 0, }, { opacity: 1, ease: Power2.easeInOut })
+    .fromTo(menu, 0.5, { opacity: 0, }, { opacity: 1, ease: Power2.easeInOut })
     // .fromTo(label, 1, { opacity: 0,  /*  x: "25vh" */ }, { opacity: 1,  /*  x: "0", */  ease: Power2.easeInOut }, '-=0.6')
     .fromTo(li[0], .6, { opacity: 0, x: "10vh" }, { opacity: 1, x: "0", ease: Power2.easeInOut }, '-=0.5')
     .fromTo(li[1], .6, { opacity: 0, x: "10vh" }, { opacity: 1, x: "0", ease: Power2.easeInOut }, '-=.5')
@@ -125,7 +125,7 @@ const closeNav = () => {
 
     // .fromTo(label, 1.2, {  opacity: 1,  }, { opacity: 0,    ease: Power2.easeInOut }, '-=1.2')
 
-    .fromTo(menu, 1, { opacity: 1, /* zIndex: 20 */ /* x: "0" */ }, { opacity: 0, /* zIndex: -1, */ /*  x: "100vw", */  ease: Power2.easeInOut })
+    .fromTo(menu, 0.5, { opacity: 1, /* zIndex: 20 */ /* x: "0" */ }, { opacity: 0, /* zIndex: -1, */ /*  x: "100vw", */  ease: Power2.easeInOut })
     .fromTo(menu, 0, { x: "0" }, { x: "100vw", ease: Power2.easeInOut })
 
   burger.classList.toggle('burger-active')
