@@ -65,3 +65,23 @@ li {
 }
 
 
+body::-webkit-scrollbar {
+  width: 12px; /* ширина для вертикального скролла */
+  // margin-right: 10px;
+
+}
+
+
+/* ползунок скроллбара */
+body::-webkit-scrollbar-thumb {
+  // padding-right: 10px;
+  background-color: rgba(205, 67, 255, 0.349);
+  // border-radius:  0 8px 8px 0;
+  // border-radius: 8px;
+  // box-shadow: inset 1px 1px 10px #f3faf7;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #253861;
+}
+

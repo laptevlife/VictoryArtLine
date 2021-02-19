@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Sansation Light';
   src: url("../fonts/sansation_light.eot");
@@ -49,6 +50,21 @@
   left: 0;
   z-index: -1;
   border: none; }
+  @media all and (max-width: 800px) {
+    .section-main .bg {
+      display: none; }
+    .section-main .bgM {
+      display: block;
+      position: absolute;
+      bottom: 10%;
+      left: 0;
+      width: 100%;
+      z-index: -1; } }
+  @media all and (min-width: 800px) {
+    .section-main .bg {
+      display: block; }
+    .section-main .bgM {
+      display: none; } }
   .section-main .text {
     position: fixed;
     margin-top: 29vh;
@@ -82,6 +98,21 @@
   position: absolute;
   top: 0;
   opacity: 0; }
+  @media all and (max-width: 800px) {
+    .section-empty .bg {
+      display: none; }
+    .section-empty .bgM {
+      display: block;
+      position: absolute;
+      bottom: 10%;
+      left: 0;
+      width: 100%;
+      z-index: -1; } }
+  @media all and (min-width: 800px) {
+    .section-empty .bg {
+      display: block; }
+    .section-empty .bgM {
+      display: none; } }
 
 .section-text {
   padding: 0 2%;
@@ -106,9 +137,9 @@
     transition: all 0.5s ease;
     box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.5); }
   .section-text .btn:hover {
-    -webkit-box-shadow: 1px 9px 24px 23px rgba(34, 60, 80, 0.16);
-    -moz-box-shadow: 1px 9px 24px 23px rgba(34, 60, 80, 0.16);
-    box-shadow: 1px 9px 24px 23px rgba(34, 60, 80, 0.16);
+    -webkit-box-shadow: 0px 5px 16px 14px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 16px 14px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 16px 14px rgba(34, 60, 80, 0.2);
     transition: all 0.5s ease; }
   .section-text .button-parent {
     width: 100%;
@@ -137,6 +168,21 @@
   background-color: white;
   z-index: 1;
   padding-top: 8vh !important; }
+  @media all and (max-width: 800px) {
+    .section-watercolor .bg {
+      display: none; }
+    .section-watercolor .bgM {
+      display: block;
+      position: absolute;
+      bottom: 10%;
+      left: 0;
+      width: 100%;
+      z-index: -1; } }
+  @media all and (min-width: 800px) {
+    .section-watercolor .bg {
+      display: block; }
+    .section-watercolor .bgM {
+      display: none; } }
   .section-watercolor .bg {
     position: absolute;
     top: 0;
@@ -144,6 +190,9 @@
     width: 100%;
     object-fit: contain;
     z-index: -1; }
+  .section-watercolor .btn {
+    background-color: #67D1FF;
+    border: none; }
   @media all and (min-width: 800px) {
     .section-watercolor .bg {
       width: 100% !important;
@@ -157,12 +206,30 @@
   border: 1px solid white;
   background-color: white;
   z-index: 1; }
-  .section-inc .bg2 {
+  @media all and (max-width: 800px) {
+    .section-inc .bg {
+      display: none; }
+    .section-inc .bgM {
+      display: block;
+      position: absolute;
+      bottom: 10%;
+      left: 0;
+      width: 100%;
+      z-index: -1; } }
+  @media all and (min-width: 800px) {
+    .section-inc .bg {
+      display: block; }
+    .section-inc .bgM {
+      display: none; } }
+  .section-inc .btn {
+    background-color: #515151;
+    border: none; }
+  .section-inc .bg {
     position: absolute;
     z-index: -1;
-    bottom: 0vh;
-    right: 0;
-    width: 40% !important; }
+    bottom: 5vh;
+    right: 5%;
+    width: 90% !important; }
 
 .section-pencil {
   width: 100%;
@@ -172,13 +239,31 @@
   border: 1px solid white;
   background-color: white;
   z-index: 1; }
-  .section-pencil .bg1 {
+  @media all and (max-width: 800px) {
+    .section-pencil .bg {
+      display: none; }
+    .section-pencil .bgM {
+      display: block;
+      position: absolute;
+      bottom: 10%;
+      left: 0;
+      width: 100%;
+      z-index: -1; } }
+  @media all and (min-width: 800px) {
+    .section-pencil .bg {
+      display: block; }
+    .section-pencil .bgM {
+      display: none; } }
+  .section-pencil .bg {
     position: absolute;
-    bottom: 0%;
-    height: 30%;
-    width: 80%;
-    left: 0%;
+    bottom: 10vh;
+    height: 80%;
+    width: 90% !important;
+    left: 5%;
     z-index: -1; }
+  .section-pencil .btn {
+    background-color: #BFBEBE;
+    border: none; }
 
 .section-sepia {
   width: 100%;
@@ -188,15 +273,31 @@
   border: 1px solid white;
   background-color: white;
   z-index: 1; }
+  @media all and (max-width: 800px) {
+    .section-sepia .bg {
+      display: none; }
+    .section-sepia .bgM {
+      display: block;
+      position: absolute;
+      bottom: 10%;
+      left: 0;
+      width: 100%;
+      z-index: -1; } }
+  @media all and (min-width: 800px) {
+    .section-sepia .bg {
+      display: block; }
+    .section-sepia .bgM {
+      display: none; } }
   .section-sepia .bg {
     position: absolute;
-    width: 50%;
-    right: 0;
-    height: 50%;
+    width: 90% !important;
+    left: 5%;
+    height: 80%;
     z-index: -1;
-    bottom: 0;
-    background-image: url("../images/bg/sepia.jpg");
-    background-size: cover; }
+    top: 10%; }
+  .section-sepia .btn {
+    background-color: #CCAE81;
+    border: none; }
   .section-sepia .swiper-container {
     height: 60vh; }
 
@@ -208,14 +309,31 @@
   border: 1px solid white;
   background-color: white;
   z-index: 1; }
-  .section-acrylic .bg1 {
+  @media all and (max-width: 800px) {
+    .section-acrylic .bg {
+      display: none; }
+    .section-acrylic .bgM {
+      display: block;
+      position: absolute;
+      bottom: 10%;
+      left: 0;
+      width: 100%;
+      z-index: -1; } }
+  @media all and (min-width: 800px) {
+    .section-acrylic .bg {
+      display: block; }
+    .section-acrylic .bgM {
+      display: none; } }
+  .section-acrylic .bg {
     position: absolute;
-    width: 70%;
-    height: 200px;
-    left: 20%;
-    top: 30vh;
-    z-index: -1;
-    transform: rotate(-90deg); }
+    width: 100% !important;
+    height: 80%;
+    left: 0%;
+    top: 10vh;
+    z-index: -1; }
+  .section-acrylic .btn {
+    background-color: #8EC9FF;
+    border: none; }
   .section-acrylic .swiper-container {
     height: 60vh; }
 
@@ -229,6 +347,21 @@
   z-index: 1;
   padding-left: 10%;
   padding-right: 10%; }
+  @media all and (max-width: 800px) {
+    .section-price .bg {
+      display: none; }
+    .section-price .bgM {
+      display: block;
+      position: absolute;
+      bottom: 10%;
+      left: 0;
+      width: 100%;
+      z-index: -1; } }
+  @media all and (min-width: 800px) {
+    .section-price .bg {
+      display: block; }
+    .section-price .bgM {
+      display: none; } }
   .section-price .text p {
     font-size: 0.6rem;
     font-weight: 800; }
@@ -317,10 +450,28 @@
   border: 1px solid white;
   background-color: white;
   z-index: 1; }
-  .section-contacts .bg1 {
+  @media all and (max-width: 800px) {
+    .section-contacts .bg {
+      display: none; }
+    .section-contacts .bgM {
+      display: block;
+      position: absolute;
+      bottom: 10%;
+      left: 0;
+      width: 100%;
+      z-index: -1; } }
+  @media all and (min-width: 800px) {
+    .section-contacts .bg {
+      display: block; }
+    .section-contacts .bgM {
+      display: none; } }
+  .section-contacts .bg-contacts {
     position: absolute;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain;
     z-index: -1; }
   .section-contacts .text {
     margin-top: 20vh; }
@@ -359,18 +510,19 @@
   .text p {
     font-size: 0.5rem; }
   .section-main .text-main {
-    top: -10vh;
+    width: 60%;
+    top: -17vh;
     left: 10%; }
     .section-main .text-main h1 {
-      font-size: 2.4rem !important; }
+      font-size: calc((530vw - 30rem)/(80 - 30) * (1.5 - 1) + 1rem) !important; }
     .section-main .text-main p.mobil {
       font-size: 0.9rem !important;
       display: none; }
     .section-main .text-main p.dt {
-      font-size: 0.9rem !important;
       display: block;
       margin-top: 0%;
-      margin-left: 5%; }
+      margin-left: 5%;
+      font-size: calc((130vw - 30rem)/(80 - 30) * (1.5 - 1) + 1rem) !important; }
   .section-main {
     background-image: url("../images/bg/mainbig2.jpg"); }
   .section.flex {
@@ -539,3 +691,14 @@ li {
 .container {
   width: 100%;
   min-height: 100vh; }
+
+body::-webkit-scrollbar {
+  width: 12px;
+  /* ширина для вертикального скролла */ }
+
+/* ползунок скроллбара */
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(205, 67, 255, 0.349); }
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #253861; }

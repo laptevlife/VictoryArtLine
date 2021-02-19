@@ -26,6 +26,10 @@ const materialInputs = document.querySelectorAll('.material input')
 const sizeInputs = document.querySelectorAll('.size input')
 const showPrice = document.querySelector('.price');
 
+const backgrounds = document.querySelectorAll('.bg')
+const backgroundsMobil = document.querySelectorAll('.bgM')
+
+// console.log('backgrounds', backgrounds);
 
 
 //CALCULATOR
@@ -121,10 +125,7 @@ const closeNav = () => {
     .fromTo(li[2], .5, { opacity: 1, x: "0" }, { opacity: 0, x: "10vh", ease: Power2.easeInOut }, '-=.4')
     .fromTo(li[1], .5, { opacity: 1, x: "0" }, { opacity: 0, x: "10vh", ease: Power2.easeInOut }, '-=.4')
     .fromTo(li[0], .5, { opacity: 1, x: "0" }, { opacity: 0, x: "10vh", ease: Power2.easeInOut }, '-=.4')
-
-
     // .fromTo(label, 1.2, {  opacity: 1,  }, { opacity: 0,    ease: Power2.easeInOut }, '-=1.2')
-
     .fromTo(menu, 1, { opacity: 1, /* zIndex: 20 */ /* x: "0" */ }, { opacity: 0, /* zIndex: -1, */ /*  x: "100vw", */  ease: Power2.easeInOut } , '-=.5')
     .fromTo(menu, 0, { x: "0" }, { x: "100vw", ease: Power2.easeInOut })
 
@@ -133,6 +134,33 @@ const closeNav = () => {
   // .fromTo(menu, 1.2, {  opacity: 1, x: "0",  }, { opacity: 0, x: "0",   ease: Power2.easeInOut })
 }
 
+
+// control clientWidth
+
+const widthController = ()=>{
+  let clientWidth ;
+  clientWidth = body.clientWidth
+  console.log(clientWidth); 
+  // if (clientWidth > 800){
+  //   backgroundsMobil.forEach( i => {
+  //     i.style.display = 'none'
+  //   })
+  //   backgrounds.forEach( i => {
+  //     i.style.display = 'block'
+  //   })
+  // } 
+  // if (clientWidth < 800){
+  //   backgrounds.forEach( i => {
+  //     i.style.display = 'none'
+  //   })
+  //   backgroundsMobil.forEach( i => {
+  //     i.style.display = 'block'
+  //   })
+  // }
+
+}
+widthController();
+window.addEventListener('resize', ()=> widthController())
 
 
 
@@ -178,6 +206,7 @@ const width = () => {
 
 // width()
 
+// window.addEventListener('resize', ()=> width() )
 // window.addEventListener('resize', ()=> width() )
 
 
