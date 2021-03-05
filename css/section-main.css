@@ -441,7 +441,8 @@
   padding-top: 4vh;
   border: 1px solid white;
   background-color: white;
-  z-index: 1; }
+  z-index: 1;
+  height: 85vh !important; }
   @media all and (max-width: 800px) {
     .section-contacts .bg {
       display: none; }
@@ -461,12 +462,10 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0;
+    bottom: 0;
     left: 0;
     object-fit: contain;
     z-index: -1; }
-  .section-contacts .text {
-    margin-top: 20vh; }
 
 .swiper-container {
   width: 100%;
@@ -488,6 +487,21 @@
   .swiper-slide img {
     object-fit: cover; }
 
+footer {
+  width: 100%;
+  height: 15vh;
+  background-color: #0B1922;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  footer .footer__container {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
 @media all and (min-width: 1000px) {
   .section {
     padding: 0 10%; }
@@ -495,6 +509,19 @@
     font-size: 1rem; }
   .text p {
     font-size: 0.7rem; } }
+
+@media all and (min-width: 800px) and (max-width: 1030px) and (orientation: portrait) {
+  .section-main {
+    background-image: url("../images/bg/mainbig2.jpg");
+    background-position: 70% 0% !important; }
+    .section-main .text-main {
+      width: 60%;
+      top: -7vh !important;
+      left: 5% !important; }
+  .section .swiper-container {
+    width: 50% !important;
+    height: 50vh !important;
+    background-color: pink; } }
 
 @media all and (min-width: 800px) {
   .text h1 {

@@ -68,7 +68,7 @@ const calculate = (arr, func) => {
       let res = materialRate * sizeRate;
       // console.log(sizeRate);
       
-      showPrice.textContent = sizeRate ?  res.toFixed(0) : '0';
+      showPrice.textContent = sizeRate ?  res.toFixed(0) : ' 0';
  
       // console.log(materialIndex, materialRate, sizeRate);
 
@@ -236,6 +236,12 @@ orderBtns.forEach(btn => {
 })
 
 
+// const scrollY = ()=>{
+//   const y =  window.scrollY
+//   console.log(y);
+  
+// }
+// window.addEventListener('scroll', scrollY, false)
 
 
 
@@ -410,3 +416,22 @@ var swiper5 = new Swiper('.sw5', {
 //         scrollTo();
 //     }
 // }
+
+
+
+
+
+// let x = ()=>{
+//   for (var i= 0 ; i< 10 ; i++){
+//     setTimeout(function(){
+//       console.log('i',i);
+      
+//     }, 1000)
+//   }
+
+
+// }
+
+// x()
+
+
