@@ -480,6 +480,8 @@
     left: 0;
     object-fit: contain;
     z-index: -1; }
+  .section-contacts .text h1 {
+    margin-top: 25vh; }
 
 .swiper-container {
   width: 100%;
