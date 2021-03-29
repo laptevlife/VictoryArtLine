@@ -466,6 +466,13 @@
     left: 0;
     object-fit: contain;
     z-index: -1; }
+  .section-contacts .contacts-icons {
+    width: 300px;
+    margin: auto;
+    margin-top: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
   .section-contacts .text h1 {
     margin-top: 25vh; }
 
