@@ -49,7 +49,7 @@ const backgroundsMobil = document.querySelectorAll('.bgM')
 
 //CALCULATOR
 let materialIndex = 0;
-let materialRate = 2800;
+let materialRate = 3000;
 let sizeRate = false;
 const slides =  document.querySelectorAll('.slide')
 
