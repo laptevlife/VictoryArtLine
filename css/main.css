@@ -129,7 +129,7 @@
     width: 70%;
     margin: auto;
     padding: 0.2rem 1.5rem;
-    border-radius: 20px;
+    border-radius: 6px;
     background-color: black;
     color: white;
     margin-top: 20px;
@@ -137,9 +137,9 @@
     transition: all 0.5s ease;
     box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.5); }
   .section-text .btn:hover {
-    -webkit-box-shadow: 0px 5px 16px 14px rgba(34, 60, 80, 0.2);
-    -moz-box-shadow: 0px 5px 16px 14px rgba(34, 60, 80, 0.2);
-    box-shadow: 0px 5px 16px 14px rgba(34, 60, 80, 0.2);
+    -webkit-box-shadow: 7px 12px 18px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 7px 12px 18px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 7px 12px 18px 0px rgba(34, 60, 80, 0.2);
     transition: all 0.5s ease; }
   .section-text .button-parent {
     width: 100%;
@@ -155,9 +155,11 @@
     padding: 0.1rem 1.5rem;
     border: 3px solid black;
     transition: all 300ms ease;
-    box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 6px 4px 18px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 6px 4px 18px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 6px 4px 18px 0px rgba(34, 60, 80, 0.2);
     cursor: pointer;
-    border-radius: 20px; }
+    border-radius: 12px; }
 
 .section-watercolor {
   width: 100%;
@@ -191,8 +193,10 @@
     object-fit: contain;
     z-index: -1; }
   .section-watercolor .btn {
-    background-color: #67D1FF;
+    background-color: #7DB3ED;
     border: none; }
+  .section-watercolor .btn:hover {
+    background-color: #F7CBF1; }
   @media all and (min-width: 800px) {
     .section-watercolor .bg {
       width: 100% !important;

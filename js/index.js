@@ -5,6 +5,7 @@ const label = document.querySelector(".label");
 const li = document.querySelectorAll("li");
 const texts = document.querySelectorAll(".section-text");
 const orderBtns = document.querySelectorAll(".btn");
+const toContactsBtns = document.querySelectorAll(".to-contacts");
 
 const body = document.querySelector("body");
 const sectionMain = document.querySelector(".section-main");
@@ -21,6 +22,7 @@ const incSection = document.querySelector('.section-inc');
 const pencilSection = document.querySelector('.section-pencil');
 const sepiaSection = document.querySelector('.section-sepia');
 const priceSection = document.querySelector('.section-price');
+const contactsSection = document.querySelector('.section-contacts');
 
 const materialInputs = document.querySelectorAll('.material input')
 const sizeInputs = document.querySelectorAll('.size input')
@@ -31,6 +33,19 @@ const backgroundsMobil = document.querySelectorAll('.bgM')
 
 // console.log('backgrounds', backgrounds);
 
+// console.log(orderBtns);
+
+// orderBtns.addEventListener('onmouseover', console.log('huy'))
+// orderBtns.forEach(i=>{
+//   i.onmouseover.addEventListener('mouseover', ()=>{
+//     console.log('pizda');
+//   })
+// })
+
+// onmouseover = function(){
+//   console.log('pizda');
+  
+// }
 
 //CALCULATOR
 let materialIndex = 0;
@@ -234,6 +249,11 @@ orderBtns.forEach(btn => {
     priceSection.scrollIntoView({ behavior: "smooth" });
   })
 })
+toContactsBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    contactsSection.scrollIntoView({ behavior: "smooth" });
+  })
+})
 
 
 // const scrollY = ()=>{
@@ -244,6 +264,7 @@ orderBtns.forEach(btn => {
 // window.addEventListener('scroll', scrollY, false)
 
 
+// orderBtns.addEventListener('mouseover', console.log('huy'))
 
 
 var swiper1 = new Swiper('.sw1', {
