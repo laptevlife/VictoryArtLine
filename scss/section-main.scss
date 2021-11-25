@@ -606,6 +606,7 @@ $mainTransition : 'all 0.1s ease';
 
 .swiper-container {
     width: 100%;
+    overflow: hidden !important;
     // padding-top: 50px;
     // padding-bottom: 50px;
     margin-top: 3vh;

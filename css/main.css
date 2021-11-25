@@ -496,6 +496,7 @@
 
 .swiper-container {
   width: 100%;
+  overflow: hidden !important;
   margin-top: 3vh;
   margin-bottom: 50px;
   height: 55vh; }
